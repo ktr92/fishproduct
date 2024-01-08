@@ -1,0 +1,216 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                  <li id="bx_breadcrumb_0" itemprop="itemListElement" itemscope=""
+                    itemtype="http://schema.org/ListItem">
+                    <a href="/" title="<img src='/local/templates/kolbasa/public/img/Home.svg' alt='Главная'>"
+                      itemprop="item">
+                      <span itemprop="name"><img src="/local/templates/kolbasa/public/img/Home.svg"
+                          alt="Главная"></span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li id="bx_breadcrumb_1" itemprop="itemListElement" itemscope=""
+                    itemtype="http://schema.org/ListItem">
+                    <a href="/payment-delivery/" title="Доставка и оплата" itemprop="item">
+                      <span itemprop="name">Как купить</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="pageheader pageheader_tagview">
+                 <h1>Как купить</h1>  
+              </div>
+           
+            <div class="pageheader pageheader__type2 pageheader__type3">
+
+              <h2>Процедура покупки товара в нашем Интернет-магазине очень проста и состоит из нескольких шагов.
+              </h2>
+            </div>
+            <div class="customblock_flex_663">
+            <div class="customblock customblock_flex ">
+              <div class="customblock__left ">
+                <div class="customblock__image">
+                  <img src="img/how1.svg" alt="">
+                </div>
+              </div>
+              <!-- /.customblock__left -->
+              <div class="customblock__right customblock_contentside">
+                <div class="customblock__content">
+                  <div class="customblock__title">
+                    <h2>Работа с каталогом товаров</h2>
+                  </div>
+                  <!-- /.customblock__title -->
+                  <div class="customblock__block">
+                    <div class="customblock__text">
+                      <p>Для выбора товаров переходите по соответствующим продуктовым разделам. На понравившихся товарах
+                        нажимайте кнопку Корзина.Внимание! У каждого товара есть его подробное описание состава, пищевой
+                        и энергетической ценности, а также условий хранения. Для просмотра подробного описания товара
+                        кликните мышкой по его названию.</p>
+                    </div><!-- /.customblock__text -->
+                  </div>
+                  <div class="customblock__block">
+                    <div class="customblock__search">
+                      <form action="">
+                        <div class="searchinput">
+                          <button type="submit"><img src="img/Search.svg" alt=""></button>
+                          <input type="text" placeholder="Искать товар можно так же по названию">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="customblock__block">
+                    <div class="customblock__text">
+                      <p>Для поиска товара необходимо ввести название продукта, например, «Докторская». Вам будут
+                        показаны все товары, названия которых содержат введенное вами сочетание символов.</p>
+                    </div><!-- /.customblock__text -->
+                  </div>
+                </div>
+
+
+
+              </div>
+              <!-- /.customblock__right -->
+            </div>
+            <!-- /.customblock -->
+            <div class="customblock customblock_flex">
+              <div class="customblock__left customblock_contentside">
+                <div class="customblock__content">
+                  <div class="customblock__title">
+                    <h2>Оформление заказа</h2>
+                  </div>
+                  <!-- /.customblock__title -->
+                  <div class="customblock__block">
+                    <div class="customblock__text">
+                      <p>Выберите товар и укажите количество. Затем выберите "НАРЕЗКА", если товар нужно нарезать или "УПАКОВКА", если товар нужен в заводской упаковке. Нажмите кнопку Продолжить покупки, если хотите еще выбрать товар. Если Вы закончили выбирать товар, нажмите кнопку Оформить заказ или перейдите в Корзину.</p>
+                    </div><!-- /.customblock__text -->
+
+                    <div class="customblock__cols">
+                      <div class="customblock__col">
+                        <div class="customblock__price">1500 руб.</div><!-- /.customblock__price -->
+                        <div class="customblock__text">Мин. сумма заказа</div><!-- /.customblock__text -->
+                      </div><!-- /.customblock__col -->
+                      <div class="customblock__col">
+                        <div class="customblock__price">149 руб.</div><!-- /.customblock__price -->
+                        <div class="customblock__text">Стоимость доставки</div><!-- /.customblock__text -->
+                      </div><!-- /.customblock__col -->
+                    </div><!-- /.customblock__cols -->
+                   
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- /.customblock__left -->
+              <div class="customblock__right">
+                <div class="customblock__image">
+                  <img src="img/how2.png" alt="">
+                </div>
+               
+
+
+
+              </div>
+              <!-- /.customblock__right -->
+            </div>
+            <!-- /.customblock -->
+            <div class="customblock customblock_flex customblock_flex_663">
+              <div class="customblock__left ">
+                <div class="customblock__image">
+                  <img src="img/how3.svg" alt="">
+                </div>
+              </div>
+              <!-- /.customblock__left -->
+              <div class="customblock__right customblock_contentside">
+                <div class="customblock__content">
+                  <div class="customblock__title">
+                    <h2>Подтверждение заказа</h2>
+                  </div>
+                  <!-- /.customblock__title -->
+                  <div class="customblock__block">
+                    <div class="customblock__text">
+                      <p>Заполните обязательную информацию о доставке товара фамилию и имя получателя, номер телефона для связи, адрес электронной почты для отправки чека, адрес доставки, дату доставки, время доставки, комментарии для сборщика и доставщика. Для оформления заказа вам нужно нажать кнопку оформить заказ.</p>
+                    </div><!-- /.customblock__text -->
+                  </div>
+                  
+                  <div class="customblock__block">
+                    <div class="customblock__text">
+                      <p><span class="red"><b>Внимание! </b></span>Неправильно указанный номер телефона, неточный или неполный адрес могут привести к дополнительной задержке! Внимательно проверяйте Ваши персональные данные при регистрации и оформлении заказа. В случае необходимости уточнения и/или корректировки данных с Вами свяжется оператор. Если Вы хотите отменить заказ, зайдите в личный кабинет на сайте и нажмите Отменить заказ</p>
+                    </div><!-- /.customblock__text -->
+                  </div>
+                  
+                </div>
+
+
+
+              </div>
+              <!-- /.customblock__right -->
+            </div>
+            <!-- /.customblock -->
+
+            <div class="customblock customblock_flex">
+              <div class="customblock__left customblock_contentside">
+                <div class="customblock__content">
+                  <div class="customblock__title">
+                    <h2>Оплата и цены</h2>
+                  </div>
+                  <!-- /.customblock__title -->
+                  <div class="customblock__block">
+                    <div class="customblock__text">
+                      <p>Цена за штучный товар указана за штуку, цена за весовой товар указана в килограммах. Итоговая стоимость может измениться после взвешивания весового товара. Стоимость заказа указывается в чеке. Все налоги включены в стоимость товара.Внимание! 
+
+                       </p>
+                    </div><!-- /.customblock__text -->
+                    <div class="customblock__text">
+                      <p> Для каждого отдельного заказа возможен только один способ оплаты - оплата банковской картой на сайте. Оплата заказа по частям различными способами невозможна.Электронный чек отправляется Вам на адрес электронной почты, указанной при оформлении заказа.
+                       </p>
+                    </div><!-- /.customblock__text -->
+
+                  
+                   
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- /.customblock__left -->
+              <div class="customblock__right">
+                <div class="customblock__image">
+                  <img src="img/how4.png" alt="">
+                </div>
+               
+
+
+
+              </div>
+              <!-- /.customblock__right -->
+            </div>
+            <!-- /.customblock -->
+          </div><!-- /.customblock_flex_663 -->
+            <div class="borderimg customblock">
+            <div class="borderimg__border">
+              <div class="customblock__title">
+                <h2>Возврат товаров</h2>
+              </div>
+              <div class="customblock__text">
+                <p> Возврат продовольственных товаров возможен только в случае, если это товар ненадлежащего качества. Товар ненадлежащего качества это – товар непригодный для использования по назначению, брак, с истекшим сроком годности, товар с нарушенной упаковкой. </p>
+                <div class="customblock__text">
+                  <p>  Визуальная оценка качества товара осуществляется при приемке товара у курьера. В случае выявления некачественного товара Вы вправе отказаться от покупки. Денежные средства за возвращенный товар будут возвращены Вам на карту, с которой Вы оплачивали заказ на сайте. Электронный чек возврата будет отправлен на электронную почту, которую Вы указывали при оформлении заказа. Внимание! Отказ от заказа не освобождает от оплаты услуги по доставке товара. </p>
+                  <div class="customblock__text">
+                    <p>  Если в процессе потребления Вам не понравились органолептические качества продукта, Вам необходимо обратиться к оператору горячей линии по телефону +7(985) 41-133-41 сообщив номер заказа и наименование продукта, который Вам не понравился.
+                 </p>
+              </div><!-- /.customblock__text -->
+            </div><!-- /.borderimg -->
+          </div>
+          </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
