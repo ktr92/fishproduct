@@ -9,6 +9,9 @@
     "start": "webpack serve",
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
+  "engines": {
+    "node": "16"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^9.0.1",

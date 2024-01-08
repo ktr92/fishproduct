@@ -2,9 +2,9 @@
 
 @mixin container {
   width: 100%;
-  max-width: 1530px;
+  max-width: 1540px;
   margin: 0 auto;
-  padding: 0 42px;
+  padding: 0 10px;
 }
 
 
@@ -22,7 +22,7 @@
 
 
 @mixin xlarge-screen() {
-  @media only screen and (max-width: 1500px) {
+  @media only screen and (max-width: 1540px) {
     @content;
   }
 }
@@ -52,22 +52,7 @@
 }
 
 
-@mixin dropdown($icon: '../img/ChevronDown.svg'){
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 13px;
-  &:after {
-    content: url($icon);
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-  }
-}
+
 
 
 @mixin imagecenter ($padding: 24.62%, $fill: width) {
@@ -99,13 +84,3 @@
   }  
 }
 
-@mixin slidershadow {
-  position: relative;
-  margin: 0 -20px;
-  overflow: hidden;
-  padding: 0 20px;
-  width: calc(100% + 40px);
-  .slick-list {
-    overflow: visible;
-  }
-}
