@@ -16,7 +16,11 @@ function initFE() {
   }
 
 $(document).ready(function() {
-   
+    $(".arrowmenu").click(function () {
+        $(".headermenu__wrapper").animate({
+          scrollLeft: "+=226px",
+        })
+      })
 
 
     document.querySelectorAll('[data-toggle="password"]').forEach(item => {
@@ -50,6 +54,7 @@ $(document).ready(function() {
 
   $('button.mainmenubtn').on('click', function(e) {
       $(this).toggleClass('active')
+      $('.jsbackdrop').toggleClass('active')
       $('.mainmenu').toggleClass('active')
   })
   $('.jscatalog .js-toggler').on('click', function(e) {
@@ -185,37 +190,22 @@ $(document).ready(function() {
 
 
   function mainSliderInit() {
-    const swiper = new Swiper(".mainswiperpreview", {
-        spaceBetween: 9,
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-        },
-        slidesPerView: "auto",
-        mousewheel: true,
-        direction: 'vertical',
-        freeMode: true,
-        watchSlidesProgress: true,
-
-    });
-    const swiper2 = new Swiper(".mainswiper", {
+    var swiper = new Swiper('[data-slider="mainslider"]', {
+        loop: 1,
         effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
+  fadeEffect: {
+    crossFade: true
+  },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-            swiper: swiper,
+          nextEl: '.mainslider__right',
+          prevEl: '.mainslider__left',
         },
         pagination: {
-            el: ".mainslider-pagination",
-            clickable: true
-        },
-
-    });
+            el: ".mainslider__dots",
+          },
+      });
+      
+   
 }
 
 
