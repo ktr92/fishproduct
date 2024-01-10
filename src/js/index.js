@@ -325,22 +325,16 @@ function recipeSliderInit() {
         $(this).slick({
             dots: false,
             arrows: true,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             
-            autoplay: true,
-            autoplaySpeed: 3000,
+        /*     autoplay: true,
+            autoplaySpeed: 3000, */
             infinite: true,
             swipe: false,
             nextArrow: $(this).closest('.recipeslider').find('.sliderarrows__right'),
             prevArrow: $(this).closest('.recipeslider').find('.sliderarrows__left'),
-            responsive: [{
-                    breakpoint: 1530,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
+            responsive: [
                 {
                     breakpoint: 1200,
                     settings: {
