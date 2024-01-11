@@ -45,6 +45,18 @@ $(document).ready(function() {
         })
       })
 
+     $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    
+    $("#toTop").click(function() {
+        $("html, body").animate({scrollTop: 0}, 400);
+     });
+
 
     document.querySelectorAll('[data-toggle="password"]').forEach(item => {
         item.addEventListener('click', event => {
@@ -291,18 +303,9 @@ function productSliderInit() {
             nextArrow: $(this).closest('.productslider').find('.sliderarrows__right'),
             prevArrow: $(this).closest('.productslider').find('.sliderarrows__left'),
             responsive: [{
-                    breakpoint: 1530,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                    }
-                },
-
-                {
-                    breakpoint: 1023,
-                    settings: {
-                        variableWidth: true
-                    }
+                    breakpoint: 1279,
+                     settings: "unslick"
+                 
                 },
 
             ]
@@ -357,22 +360,13 @@ function recipeSliderInit() {
             swipe: false,
             nextArrow: $(this).closest('.recipeslider').find('.sliderarrows__right'),
             prevArrow: $(this).closest('.recipeslider').find('.sliderarrows__left'),
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
+            responsive: [{
+                breakpoint: 1279,
+                 settings: "unslick"
+             
+            },
+
+        ]
         })
     })
 
