@@ -28,6 +28,7 @@ function initFE() {
 
     recipeSliderInit()
     productSliderInit()
+   contentSliderInit()
     mobileAccordeon()
     closeByOutsideSelect()
     closeByClickOutside('.mainmenu', '.mainmenubtn')
@@ -249,7 +250,14 @@ $(document).ready(function() {
    
 }
 
+function contentSliderInit() {
+    const swiper = new Swiper(".pagecontent__images.swiper", {
+        pagination: {
+            el: ".mainslider__dots",
+          },
 
+    });
+}
 
 function detailsliderInit() {
     const swiper = new Swiper(".detailswiperpreview", {
