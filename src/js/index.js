@@ -34,6 +34,12 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: 0}, 400);
      });
 
+    $(".asidemenubutton .mainmenuLevelOne__link").on('click', function(e) {
+        e.preventDefault()
+        $(this).closest('.asidemenubutton').siblings('.asidemenu').toggleClass('active')
+        $(this).toggleClass('active')
+     });
+
 
     document.querySelectorAll('[data-toggle="password"]').forEach(item => {
         item.addEventListener('click', event => {
