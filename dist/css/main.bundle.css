@@ -8511,10 +8511,10 @@ a.location_icon {
       font-size: 14px;
       line-height: 100%; } }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 480px) {
   .category__item_large,
   .category__item {
     width: 50%; } }
 
 
-/*# sourceMappingURL=style.bundle.css.map*/
+/*# sourceMappingURL=main.bundle.css.map*/

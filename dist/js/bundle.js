@@ -522,9 +522,9 @@ window.addEventListener('load', function () {
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!*****************************!*\
-  !*** ./src/scss/style.scss ***!
-  \*****************************/
+/*!****************************!*\
+  !*** ./src/scss/main.scss ***!
+  \****************************/
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 

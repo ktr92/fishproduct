@@ -29,7 +29,7 @@ function generateHtmlPlugins(templateDir) {
 const htmlPlugins = generateHtmlPlugins("./src/html/views");
 
 const config = {
-  entry: ["./src/js/index.js", "./src/scss/style.scss"],
+  entry: ["./src/js/index.js", "./src/scss/main.scss"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "./js/bundle.js",
@@ -94,7 +94,7 @@ const config = {
      }), */
      new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
-      filename: "./css/style.bundle.css",
+      filename: "./css/main.bundle.css",
     }),
     new CopyPlugin({
       patterns: [{
