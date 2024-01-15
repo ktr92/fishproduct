@@ -14,10 +14,39 @@
   .contentpage__cols {
     flex-wrap: wrap;
   }
-  .pagecontent__images {
+  .pageslider .pagecontent__images {
     min-height: unset;
+    margin: 0 -18px;
+    width: calc(100% + 36px);
+  }
+  .pageslider  .mainslider__dotsblock {
+    bottom: 8px;
+  }
+  .contentpage .wave {
+    padding-bottom: 30px;
+  }
+  .contentpage .pageheader {
+    margin-bottom: 10px;
+  }
+  .pagecontent__image {
+    width: 100%;
+  }
+  .contentpage  {
+    .pageheader h1 {
+      font-size: 22px;
+font-style: normal;
+font-weight: 700;
+    }
   }
   .pagecontent__img {
+    border-radius: 8px;
+  }
+  .pageheader h2 {
+    font-size: 18px;
+font-style: normal;
+font-weight: 700;
+  }
+  .pageslider .pagecontent__img {
     border-radius: 0;
   }
   .contentpage__col_image {
@@ -1966,13 +1995,13 @@ line-height: 100%;
     line-height: 19px;
   }
 
-  .pagecontent__image {
+/*   .pagecontent__image {
     width: 50%;
     margin-bottom: 9px;
-  }
+  } */
 
   .pagecontent__images {
-    margin-bottom: 9px;
+    margin-bottom: 18px;
   }
 
   .pageshortdescr {
@@ -1995,11 +2024,18 @@ line-height: 100%;
   .pageshortdescr {
     margin: 17px 0;
   }
+  .pagetext {
+    margin-top: 0;
+  }
+  .contentpage__cols + .fitchesblock {
+    margin-bottom: 20px;
+  }
 
   .pagetext p {
     font-size: 14px;
     line-height: 140%;
     margin-bottom: 20px;
+    margin-top: 0;
   }
 
   .itemslistcar_large .itemslistcard__title a {
