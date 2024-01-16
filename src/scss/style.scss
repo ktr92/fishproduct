@@ -7492,7 +7492,7 @@ margin-right: 27px;
   margin-top: 28px;
   background: #fff;
   border-radius: 8px;
-  padding: 10px 8px 10px 30px;
+  padding: 10px 8px 0 30px;
 }
 
 .reviewsblock__items {
@@ -7573,7 +7573,16 @@ line-height: 100%
   }
 }
 
+.reviesblock__stars_off {
+  white-space: nowrap;
+}
 
+.reviewsblock__header .reviewsblock__title {
+  text-align: left;
+}
+.reviewsblock__number {
+  font-weight: 600;
+}
 @media(min-width: 1024px) {
   .cataloglist__items_col5 {
     .cataloglist__item {

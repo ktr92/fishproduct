@@ -3286,6 +3286,58 @@ margin-bottom: 0;
   .detailbuy__buyblock .productcard__price {
     margin-bottom: 7px;
   }
+  .reviewsblock__items {
+    max-height: 450px;
+  }
+  .reviewsblock__header{
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .reviewsblock__item {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    padding-top: 0;
+  }
+  .reviewsblock__result {
+    margin-bottom: 16px;
+  }
+  .reviewsblock__wrapper.withrating .reviewsblock__button .btn_border_black{
+    width: 100%;
+  }
+  .reviewsblock__body {
+    margin-top: 21px;
+    padding-left: 22px;
+  }
+  .reviewcard__avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+  }
+  .reviewcard__name {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .reviewcard__result .reviesblock__stars_off .fa {
+    font-size: 16px;
+    margin-right: 3px;
+  }
+  .reviewcard__date {
+    font-size: 12px;
+  }
+  .reviewcard__text {
+    font-size: 13px;
+  }
+  .reviewsblock__value{
+    width: 100%;
+  }
+  .reviewsblock__wrapper {
+    padding: 22px 4px;
+  }
+  .reviewsblock__header {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
 }
 
 @include small-screen {
