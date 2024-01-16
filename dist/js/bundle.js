@@ -129,6 +129,22 @@ $(document).ready(function() {
       $(this).closest('.haederbanner').hide()
   })
 
+
+  
+    $('.reviesblock__stars_off').each(function(){
+        let wrapper = $(this)
+        wrapper.find('.fa').each(function(index) {
+            let fa = $(this)
+            let rating =  fa.closest('[data-rating]').data('rating')
+            if(index < rating){
+                $(this).addClass('active')
+            } else {
+                return false;
+            }
+    })
+
+});
+
   $('.productcard .cardrating').each(function() {
       $(this).find('span.stars-active').css('width', $(this).find('.cardrating__value').text() * 11.2);
   });
