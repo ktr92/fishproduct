@@ -1284,15 +1284,25 @@ font-weight: 700;
     line-height: 100%;
     margin-bottom: 7px;
   }
+.productpage__images {
+  position: relative;
+}
 
   .detailinfo__count a {
     font-size: 12px;
     line-height: 14px;
   }
-
+  .swiper-horizontal .swiper-slide.swiper-slide-next {
+    opacity: 1;
+  }
+  .detailslider .detailswiper {
+    border-radius: 0;
+    margin: 0 -18px;
+    width: calc(100% + 36px);
+  }
   .detailswiper .zoom-box {
-    padding: 0 30px;
-    max-width: 600px;
+   /*  padding: 0 30px; */
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1340,11 +1350,7 @@ font-weight: 700;
   }
 
   .productcard__cart {
-    position: absolute;
-    top: calc(100% - 50px);
-    width: 100%;
-    left: 0;
-    right: 0;
+   
 
     .tocart {
       width: 100%;
@@ -1363,11 +1369,50 @@ font-weight: 700;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-bottom: 66px;
+ 
+ 
+  }
+  .productpage__title h2 {
+    font-size: 22px;
+    padding-bottom: 22px;
+  }
+  .productpage__main  {
+    margin-bottom: 32px;
   }
 
   .quantity {
     margin-right: 0;
+  }
+  .productpage__block {
+    margin-bottom: 30px;
+  }
+  .pruductfacts__row {
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .pruductfacts__title, .pruductfacts__value {
+    width: 100%;
+    line-height: 20px;
+  }
+  .productpage__description p {
+    font-size: 14px;
+  }
+  .productpage__content {
+    margin-bottom: 30px;
+  }
+  .norating .reviewsblock__wrapper {
+    height: unset;
+    padding: 30px 20px;
+  }
+  .reviewsblock__title {
+    font-size: 18px;
+    margin-bottom: 14px;
+    background-image: url(../img/wave_small.svg);
+  }
+  .reviewsblock__text {
+    font-size: 14px;
+margin-bottom: 23px;
   }
 
   .description__cols {
@@ -1400,9 +1445,10 @@ font-weight: 700;
     line-height: 14px;
   }
 
-  input.quantity-field {
-    height: 40px;
-  }
+ .productcard__cart {
+  width: calc(100% - 126px);
+  margin-left: 7px;
+ }
 
   .detailtable__body .detailtable__col,
   .detailtable__col {
@@ -2678,6 +2724,7 @@ line-height: 100%;
     bottom: 1px;
   }
 
+
   .mainslider .slider__arrow {
     display: none;
   }
@@ -2808,6 +2855,7 @@ line-height: 100%;
   }
 
   .favmobile {
+    display: block;
     margin: 0 -11px;
     width: calc(100% + 22px);
     border-top: 1px solid rgba(43, 54, 70, 0.05);
@@ -3144,7 +3192,7 @@ line-height: normal;
     }
   }
   .page {
-    margin: 30px 0 30px 0;
+    margin: 20px 0 30px 0;
   }
   .category__wrapper {
     padding: 10px 0 26px 0;
@@ -3153,6 +3201,90 @@ line-height: normal;
     font-size: 12px;
 font-style: normal;
 font-weight: 700;
+  }
+  .productpage__columnright {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .productpage__columnleft {
+    width: 100%;
+    padding: 0;
+  }
+  .productpage__columns {
+    flex-wrap: wrap;
+  }
+  .detailslider .detailswiper .zoom-box img {
+    max-width: 100%;
+  }
+
+  .mainslider__dotsblock_detail {
+    bottom: 0;
+  }
+  .detailinfo__sku {
+    font-size: 12px;
+
+  }
+  .detailinfo__reviews {
+    order: -1
+  }
+  .detailinfo__header {
+    justify-content: space-between;
+  }
+  .detailinfo__header .productcard__blockrating__value span {
+    font-size: 12px;
+    opacity: 0.4;
+  }
+  .detailinfo__reviews {
+    margin-right: 14px;
+  }
+  .detailinfo__wishlist .favtext {
+    font-size: 12px;
+    padding-left: 0;
+    opacity: 0.9;
+  }
+  .detailinfo__wishlist {
+    svg {
+      width: 16px;  
+      height: 16px;
+    }
+  }
+  .detailinfo__title h1 {
+    font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+margin-bottom: 0;
+  }
+  .detailinfo__text {
+    margin: 18px 0 14px 0;
+    font-size: 14px;
+    color: rgba(43, 54, 70, 1);
+  }
+  .detailtable__row {
+    padding: 10px 10px 22px 10px;
+  }
+  .detailtable__content {
+    padding: 4px 11px;
+  }
+  .detailtable__value {
+    font-size: 14px;
+  }
+  .detailtable__text {
+    font-size: 10px;
+  }
+  .productcard__buy .productcard__oldprice {
+    font-size: 14px;
+  }
+  .productcard__buy .productcard__infotext {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .productcard__pricecaption {
+    font-size: 16px;
+
+  }
+  .detailbuy__buyblock .productcard__price {
+    margin-bottom: 7px;
   }
 }
 

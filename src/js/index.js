@@ -260,16 +260,19 @@ function detailsliderInit() {
             swiper: swiper,
         },
         pagination: {
-            el: ".detailslider-pagination",
+            el: ".detail__dots",
             clickable: true
         },
 
     });
 
     $(function() {
-        $(".zoom-box").each(function() {
-            $(this).zoom();
-        })
+        if ($(window).width() >= 1024) {
+            $(".zoom-box").each(function() {
+                $(this).zoom();
+            })
+        }
+     
     })
 }
 
@@ -293,10 +296,15 @@ function productSliderInit() {
             swipe: false,
             nextArrow: $(this).closest('.productslider').find('.sliderarrows__right'),
             prevArrow: $(this).closest('.productslider').find('.sliderarrows__left'),
-            responsive: [{
-                    breakpoint: 1279,
-                     settings: "unslick"
-                 
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    slidesToShow: 3,     
+                    slidesToScroll: 1,       
+                },
+                {
+                    breakpoint: 1023,
+                     settings: "unslick"                 
                 },
 
             ]
@@ -351,11 +359,17 @@ function recipeSliderInit() {
             swipe: false,
             nextArrow: $(this).closest('.recipeslider').find('.sliderarrows__right'),
             prevArrow: $(this).closest('.recipeslider').find('.sliderarrows__left'),
-            responsive: [{
-                breakpoint: 1279,
-                 settings: "unslick"
-             
-            },
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    slidesToShow: 2,            
+                },
+                {
+                    breakpoint: 1023,
+                     settings: "unslick"                 
+                },
+
+         
 
         ]
         })
