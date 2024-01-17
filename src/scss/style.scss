@@ -5747,7 +5747,7 @@ input.input_image {
 
 .check label a {
   text-decoration: underline;
-  color: rgba(43, 54, 70, 0.7);
+  color: rgba(43, 54, 70, 0.5);
 }
 
 .check label a:hover {
@@ -5755,8 +5755,11 @@ input.input_image {
 }
 
 .check label:before {
-  background-color: $main;
   border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(43, 54, 70, 0.15);
+  
+
   content: "";
   height: 16px;
   left: 0;
@@ -5770,7 +5773,21 @@ input.input_image {
   background-image: url(../img/checkbox_checked.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $main;
+  border-color: $main;
+
 }
+
+.check label {
+  color: rgba(43, 54, 70, 0.5);
+  transition: all 0.3s ease;
+}
+
+.check input:checked + label, 
+.check input:checked + label a {
+  color: rgba(43, 54, 70, 1);
+}
+
 
 .blockheader__left {
   .infocard__title {
