@@ -160,7 +160,7 @@ $(document).ready(function() {
           $(this).find('.cardrating__value').text() * 18);
   });
 
-  $("input[type=tel]").mask("7 (999) 999-99-99");
+  $("input[type=tel]").mask("+7 ___ ___ __ __");
 
   lightbox.option({
     'resizeDuration': 0,
