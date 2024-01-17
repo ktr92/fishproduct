@@ -4846,9 +4846,9 @@ p {
 }
 
 .pageparams__item {
-  color: rgba(37, 52, 79, 0.4);
+  color: rgba(43, 54, 70, 0.4);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 100%;
 }
@@ -4868,7 +4868,7 @@ p {
 }
 
 .pageparams {
-  margin: 15px 0;
+  margin: 21px 0 0 0;
 }
 .pagecontent__images {
   min-height: 395px;
@@ -7413,6 +7413,107 @@ line-height: normal;
   margin-bottom: 53px;
 }
 
+.pagedetail__aside {
+  max-width: 435px;
+  min-width: 435px;
+}
+
+.pagedetail__main {
+  width: calc(100% - 435px);
+  padding-right: 100px;
+}
+
+.pagecontent_large {
+  p {
+    font-size: 18px;
+  }
+}
+
+.newsdetail {
+  h2 {
+    font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; 
+margin-bottom: 23px;
+  }
+  p {
+    margin-bottom: 44px;
+  }
+
+  img {
+    display: block;
+    margin: 24px 0 44px 0;
+  }
+}
+
+.pagedetail__aside {
+}
+.pageaside {
+  padding: 32px 44px;
+  background: #F6F8FA;
+  border-radius: 12px;
+}
+.pageaside__block {
+}
+.pageaside__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+  justify-content: space-between;
+}
+.pageaside__title {
+  color: #14264C;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+}
+.pageaside__link {
+  a {
+    color: #FFA500;
+margin-left: 20px;
+display: block;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; 
+  }
+}
+.pageaside__news {
+}
+.asidenews {
+}
+.asidenews__items {
+}
+.asidenews__item {
+  margin-bottom: 33px;
+}
+.asidenews__image {
+  margin-bottom: 23px;
+  border-radius: 6px;
+  overflow: hidden;
+position: relative;
+@include imagecenter(66%, width)
+}
+.asidenews__title {
+  color: #1F3A51;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 3px;
+line-height: normal;
+}
+.asidenews__info {
+  color: #283748;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
 @media(min-width: 1024px) {
   .cataloglist__items_col5 {
     .cataloglist__item {
@@ -7425,6 +7526,17 @@ line-height: normal;
 
 
 @include xlarge-screen {
+  .pagedetail__aside {
+    max-width: 330px;
+    min-width: 330px;
+  }
+  .pageaside {
+    padding: 32px 20px;
+  }
+  .pagedetail__main {
+    width: calc(100% - 330px);
+    padding-right: 30px;
+  }
   .blockhalf__col_left {
     padding-right: 30px;
   }
