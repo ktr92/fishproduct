@@ -2211,7 +2211,8 @@ line-height: 100%;
   .errorpage {}
 
   .errorpage__code {
-    font-size: 134px;
+    margin-bottom: 16px;
+    padding: 0 50px;
   }
 
   .errorpage__main {}
@@ -2219,15 +2220,15 @@ line-height: 100%;
   .errorpage__content {}
 
   .errorpage__title {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
 
   .errorpage__text {
     font-size: 14px;
     line-height: 140%;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 
   .errorpage__main {
@@ -3059,7 +3060,7 @@ line-height: 100%;
     height: 23px;
     left: 0;
     right: 0;
-    bottom: -1px;
+    bottom: -2px;
     top: unset;
     background-repeat: repeat-x;
     background-image: url(../img/wavemob.png);
@@ -3349,7 +3350,142 @@ margin-bottom: 0;
     padding-left: 18px;
     padding-right: 18px;
   }
+  .blockabout_wide .blockabout__text {
+    width: 100%;
+  }
+  .orderinfo {
+    flex-wrap: wrap;    width: 100%;
+  }
+  .orderinfo__number {
+    width: 100%;
+  }
+  .orderinfo__link {
+    margin-left: 0;
+    margin-top: 29px;
+    width: 100%;
+  }
 
+  .orderinfo__name {
+    font-size: 14px;
+
+  }
+  .orderinfo__value {
+    font-size: 18px;
+  }
+  .orderinfo__icon {
+    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+
+    img {
+      width: 25px;
+    }
+  }
+
+  .orderinfo__link a {
+    width: 100%;
+    text-align: center;
+  }
+  .blockabout__info {
+    margin-top: 19px;
+  }
+
+  .blockabout__title_confirm {
+    padding-right: 30px;
+  }
+  .fitchesblock_large .fitchesblock__item {
+    width: 100%
+  }
+  .pagebanner__image {
+    height: 184px;
+  }
+  .pagebanner__wrapper .wavemask {
+    height: 17px;
+  }
+  .blockhalf__cols {
+    flex-wrap: wrap;
+  }
+  .blockhalf__col_left {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .pagebanner__image {
+    display: block;
+  }
+  h3 {
+    font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+margin-bottom: 24px;
+  }
+ .fitchcard {
+    min-height: unset !important;
+  }
+  .fitchesblock_large {
+    .fitchcard__img {
+      max-width: 40px;
+      min-width: 40px;
+      height: 40px;
+    }
+    .fitchcard {
+      padding: 19px  19px 10px 23px;
+    }
+  
+
+    .fitchescard__content {
+      margin-left: 30px;
+    }
+    .fitchescard__title {
+      padding-left: 0;
+      margin-left: 0;
+      font-size: 16px;
+
+    }
+    .fitchcard__text {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 5px;
+    }
+  }
+
+  .blockhalf {
+    padding: 30px 0;
+  }
+  .blockhalf .wave {
+    padding-bottom: 23px;
+    margin-bottom: 23px;
+  }
+  .pagecontent p {
+    font-size: 14px;
+  }
+  .pagecontent_type22 + .pagecontent_type22 {
+    margin-top: 20px;
+  }
+  .blockhalf__col {
+    width: 100%;
+  }
+  .grayblock {
+    padding: 19px;   min-height: unset;
+  }
+  h4 {
+    margin-bottom: 25px;
+    font-size: 18px;
+
+  }
+
+  .circle li {
+    margin-bottom: 20px;
+    padding-left: 28px;
+    font-size: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @include small-screen {
@@ -3419,14 +3555,15 @@ margin-bottom: 0;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      justify-content: center;
     }
 
     li {
-      width: 50%;
+     
       white-space: nowrap;
-      margin-right: 0;
-      margin-bottom: 8px;
+      margin: 0 26px;
+      padding: 0;
+      margin-left: 0;
 
       a {
         font-size: 14px;

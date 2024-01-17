@@ -3663,7 +3663,7 @@ line-height: normal;
 }
 
 .pageheader {
-  margin: 10px 0 19px 0;
+  margin: 20px 0 19px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4945,13 +4945,17 @@ p {
 .pagecontent {
   p {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 140%;
     /* or 22px */
     margin-bottom: 30px;
     color: #283647;
   }
+}
+
+.container .container {
+  padding: 0;
 }
 
 .pagetext {
@@ -5317,21 +5321,12 @@ p {
 }
 
 .errorpage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 30px;
+ text-align: center;
+ padding: 30px 0;
 }
 
 .errorpage__code {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 404px;
-  line-height: 100%;
-  color: $main;
+  margin-bottom: 42px;
 }
 
 .errorpage__main {}
@@ -5341,22 +5336,22 @@ p {
 }
 
 .errorpage__title {
-  font-style: normal;
-  font-weight: 600;
   font-size: 36px;
-  line-height: 100%;
-  margin-bottom: 16px;
-  color: #283647;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+  margin-bottom: 21px;
+  color: #1F3A51;
+
 }
 
 .errorpage__text {
+  color: #283748;
+margin-bottom: 36px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  /* or 22px */
-  margin-bottom: 35px;
-  color: #283647;
+  line-height: normal;
 }
 
 .errorpage__links {
@@ -5370,16 +5365,7 @@ p {
     position: relative;
     padding-left: 11px;
 
-    &:after {
-      width: 6px;
-      height: 6px;
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 5px;
-      border-radius: 50%;
-      background: $main;
-    }
+    
 
     a {
       font-style: normal;
@@ -6318,7 +6304,7 @@ a.location_icon {
 
 .fitchesblock__items {
   display: flex;
-  align-items: center;
+
   margin: 0 -5px;
   flex-wrap: wrap;
 }
@@ -6329,11 +6315,13 @@ a.location_icon {
 }
 
 .fitchcard {
+  height: 100%;
   border-radius: 8px;
   background: #F2F4F6;
   display: flex;
   align-items: center;
-  height: 102px;
+  height: 100%;
+  min-height: 102px;
   padding: 18px 20px;
 }
 
@@ -6629,7 +6617,7 @@ a.location_icon {
   position: relative;
   width: 100%;
   height: 100%;
-  @include imagecenter(33.6%, height)
+  @include imagecenter(33.6%, height);
 }
 
 .wave_vertical {
@@ -7179,6 +7167,235 @@ line-height: 100%
 .reviewsblock__number {
   font-weight: 600;
 }
+
+.blockabout_wide {
+  .blockabout__text {
+    width: 636px;
+    max-width: 100%;
+  }
+}
+
+
+.blockabout__info {
+  margin-top: 32px;
+}
+.orderinfo {
+  display: flex;
+  align-items: center;
+}
+.orderinfo__number {
+  display: flex;
+  align-items: center;
+}
+.orderinfo__icon {
+  min-width: 52px;
+  height: 52px;
+  width: 52px;
+  border-radius: 12px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 2px 2px 11px 0px rgba(40, 54, 71, 0.10);
+
+  margin-right: 18px;
+}
+.orderinfo__order {
+
+}
+.orderinfo__name {
+  color: rgba(43, 54, 70, 0.5);
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.orderinfo__value {
+  color: #1F3A51;
+
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; 
+}
+.orderinfo__link {
+  margin-left: 33px;
+}
+.btn_main_wide {
+  padding: 0 30px;
+  font-size: 18px;
+  border-radius: 12px;
+
+}
+
+/* .wavemask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right, 
+    #F2F4F6 0, 
+    #F2F4F6 63px, 
+    transparent 63px, 
+    transparent 100%
+  );
+} */
+
+.pagebanner__image {
+  height: 438px;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+
+}
+
+.pagebanner__wrapper {
+  position: relative;
+/*   overflow: hidden; */
+    width: 100%;
+  background: #fff;
+  .wavemask {
+    background:  url(../img/wave_pagebanner.svg);
+    background-size: cover;
+    left: -1px;
+    right: -1px;
+    width: calc(100% + 2px);
+    position: absolute;
+    display: block;
+    height: 42px;
+    bottom: -1px;
+    z-index: 99;
+  }
+ 
+}
+
+
+h3 {
+  margin-top: 0;
+  font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+margin-bottom: 40px;
+}
+
+.fitchesblock_large {
+  .fitchcard {
+    min-height: 155px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .fitchesblock__items {
+    margin: 0 -8px;
+  }
+  .fitchesblock__item {
+    width: 33.333%;
+    padding: 0 8px;
+  }
+
+  .fitchcard__img {
+    width: 80px;
+    max-width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+}
+
+.fitchescard__content {
+  margin-left: 37px;
+
+  .fitchescard__title {
+    font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    margin-left: 0;
+  }
+  .fitchcard__text {
+    margin-top: 10px;
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+}
+.blockhalf__cols {
+  display: flex;
+}
+
+.blockhalf__col {
+  width: 50%;
+}
+.blockhalf__col_left {
+ padding-right: 94px;
+
+}
+.pagecontent_type22 + .pagecontent_type22  {
+  margin-top: 40px;
+}
+
+.pagecontent_type22 p {
+ margin-bottom: 7px;
+}
+
+.grayblock {
+  min-height: 311px;
+  border-radius: 8px;
+background: #F6F8FA;
+padding: 60px;
+display: flex;
+align-items: center;
+}
+
+h4 {
+  color: #1F3A51;
+margin-bottom: 31px;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+margin-top: 0;
+}
+
+.circle {
+  @include clear;
+
+  li {
+    color: #283748;
+margin-bottom: 7px;
+padding-left: 28px;
+background-image: url(../img/circle.svg);
+background-position: left top;
+min-height: 23px;
+display: block;
+background-repeat: no-repeat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+}
+
+.blockhalf {
+  padding: 90px 0;
+}
+
+.blockhalf .wave {
+  margin-bottom: 30px;
+}
+
+.pagebanner {
+  margin-bottom: 53px;
+}
+
 @media(min-width: 1024px) {
   .cataloglist__items_col5 {
     .cataloglist__item {
@@ -7188,7 +7405,20 @@ line-height: 100%
 }
 
 
+
+
 @include xlarge-screen {
+  .blockhalf__col_left {
+    padding-right: 30px;
+  }
+  .fitchesblock_large .fitchcard {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fitchescard__content {
+    margin-left: 15px;
+  }
   .contentpage__col_image {
     max-width: 50%;
     min-width: 50%;
