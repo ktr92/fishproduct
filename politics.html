@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <title>MAIN</title>
+    <link rel="preload" href="fonts/Opel-Sans-Regular.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="fonts/Opel-Sans-Bold.woff" as="font" type="font/woff" crossorigin />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <link rel="stylesheet" href="css/slick-theme.min.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.bundle.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/selectbox.js"></script>
+  </head>
+  <body>
+    <div class="jsbackdrop"></div>
+    <div class="mobilemenu">
+      <div class="mobilemenu__wrapper">
+        <div class="mobilemenu__block">
+          <div class="mobilemenu__menu">
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content mobilemenu--catalog jscatalog">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/burger.svg" alt="" /></span
+                  ><span class="mobilemenu__name">Каталог</span> </a
+                ><span class="js-toggler"><img src="img/ChevronWhite.svg" alt="" /></span>
+              </div>
+            </div>
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/icnHeart.svg" alt="" /></span
+                  ><span class="mobilemenu__name">Избранное</span></a
+                >
+              </div>
+            </div>
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/icnCart.svg" alt="" /></span
+                  ><span class="mobilemenu__name">Корзина</span></a
+                >
+                <div class="mobilemenu__cartinfo">
+                  <div class="mobilemenu__cartcount">13</div>
+                  <div class="mobilemenu__cartsumm">На сумму: 5 950 <span class="rouble">₽</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/icnLogin.svg" alt="" /></span
+                  ><span class="mobilemenu__name">Мой кабинет</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobilemenu__block">
+          <div class="mobilemenu__menu">
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/icnInfo.svg" alt="" /></span
+                  ><span class="mobilemenu__name">О нас</span></a
+                >
+              </div>
+            </div>
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/icnContact.svg" alt="" /></span
+                  ><span class="mobilemenu__name">Контакты</span></a
+                >
+              </div>
+            </div>
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/icnBLog.svg" alt="" /></span
+                  ><span class="mobilemenu__name">Блог</span></a
+                >
+              </div>
+            </div>
+            <div class="mobilemenu__item">
+              <div class="mobilemenu__content">
+                <a href="#" class="mobilemenu__link"
+                  ><span class="mobilemenu__icon"><img src="img/icnDelivery.svg" alt="" /></span
+                  ><span class="mobilemenu__name">Доставка и оплата</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobilemenu__block">
+          <div class="mobilemenu__footer">
+            <div class="footer__contacts">
+              <div class="contacts__phone"><a href="tel:+7 495 555 55 55">+7 495 555 55 55</a></div>
+              <div class="footer__callback">
+                <div class="headertop__social">
+                  <div class="socials">
+                    <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt="" /></a
+                    ><a href="#" class="socials__item"><img src="img/Telegram.svg" alt="" /></a>
+                  </div>
+                </div>
+                <div class="headertop__callback">
+                  <a href="#popup_callback" data-toggle="modal" class="callbacklink">Заказать звонок</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobilemenu__block">
+          <ul class="mobilemenu__links">
+            <li><a href="#" class="mobilemenu__link location_icon">Магазины</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header id="header" class="header">
+      <div class="header__topline">
+        <div class="container">
+          <div class="headercontainer" id="headercontainer">
+            <div class="mobilepanel">
+              <div class="mobilepanel__left">
+                <div class="mobilepanel__logo">
+                  <a href="#" class="logo"><img src="img/logo.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="mobilepanel__right">
+                <div class="headermain__iconlinks">
+                  <div class="iconlinks">
+                    <div class="iconlinks__item">
+                      <a href="#" class="iconlinks__link"
+                        ><span class="iconlinks__badge">13</span>
+                        <span class="iconlinks__icon"><img src="img/icnCart.svg" alt="" /></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobilepanel__menubutton">
+                  <button class="menubutton">
+                    <img src="img/mobilebutton.svg" alt="" class="menubutton__open" />
+                    <img src="img/menubutton__close.svg" alt="" class="menubutton__close" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="headertop">
+              <div class="headertop__left">
+                <div class="headertop__leftitems">
+                  <div class="topmenu">
+                    <div class="topmenu__wrapper">
+                      <div class="topmenu__items">
+                        <ul>
+                          <li><a href="#" class="location_icon">Магазины</a></li>
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Доставка</a></li>
+                          <li><a href="#">Блог</a></li>
+                          <li><a href="#">Контакты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="headertop__right">
+                <div class="headertop__rightitems">
+                  <div class="headertop__phone">
+                    <a href="tel:+7 495 555 55 55" class="phonelink">+7 495 555 55 55</a>
+                  </div>
+                  <div class="headertop__social">
+                    <div class="socials">
+                      <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt="" /></a
+                      ><a href="#" class="socials__item"><img src="img/Telegram.svg" alt="" /></a>
+                    </div>
+                  </div>
+                  <div class="headertop__callback">
+                    <a href="#popup_callback" data-toggle="modal" class="callbacklink">Заказать звонок</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerwrapper">
+        <div class="container">
+          <div id="headermain">
+            <div class="headermain">
+              <div class="headermain__left">
+                <div class="headermain__logo">
+                  <a href="#" class="logo"><img src="img/logo.svg" alt="" /></a>
+                </div>
+                <div class="headermain__menu">
+                  <button class="mainmenubtn">
+                    <span><img class="burgericon icon--white" src="img/burger.svg" alt="" /> <span>Каталог</span> </span
+                    ><span><img src="img/expand.svg" alt="" /></span>
+                  </button>
+                  <div class="mainmenu">
+                    <div class="mainmenu__wrapper">
+                      <div class="mainmenu__items">
+                        <div class="mainmenu__level_1">
+                          <ul class="mainmenuLevelOne">
+                            <li class="mainmenuLevelOne__item">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menuFire.svg" alt="" /></span
+                                ><span class="mainmenu__name">Акции</span></a
+                              >
+                            </li>
+                            <li class="mainmenuLevelOne__item">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menuDiamond.svg" alt="" /></span
+                                ><span class="mainmenu__name">Новинки</span></a
+                              >
+                            </li>
+                            <li class="mainmenuLevelOne__item">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menuCaviar.svg" alt="" /></span
+                                ><span class="mainmenu__name">Икра</span></a
+                              >
+                            </li>
+                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menuBream.svg" alt="" /></span
+                                ><span class="mainmenu__name">Горячее копчение</span></a
+                              >
+                              <div class="mainmenu__level_2">
+                                <ul class="mainmenuLevelTwo">
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="mainmenuLevelOne__item">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menufish.svg" alt="" /></span
+                                ><span class="mainmenu__name">Холодное копчение</span></a
+                              >
+                            </li>
+                            <li class="mainmenuLevelOne__item">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menugrilled.svg" alt="" /></span
+                                ><span class="mainmenu__name">Рыба соленая</span></a
+                              >
+                            </li>
+                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menusalting.svg" alt="" /></span
+                                ><span class="mainmenu__name">Рыба вяленая / Сушеная</span></a
+                              >
+                              <div class="mainmenu__level_2">
+                                <ul class="mainmenuLevelTwo">
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="mainmenuLevelOne__item">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menufish1.svg" alt="" /></span
+                                ><span class="mainmenu__name">Рыба замороженная</span></a
+                              >
+                            </li>
+                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menushrimp.svg" alt="" /></span
+                                ><span class="mainmenu__name">Морепродукты</span></a
+                              >
+                              <div class="mainmenu__level_2">
+                                <ul class="mainmenuLevelTwo">
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                              <a href="" class="mainmenuLevelOne__link"
+                                ><span class="mainmenu__icon"><img src="img/menucanned-food.svg" alt="" /></span
+                                ><span class="mainmenu__name">Консервы</span></a
+                              >
+                              <div class="mainmenu__level_2">
+                                <ul class="mainmenuLevelTwo">
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                  <li class="mainmenuLevelTwo__item">
+                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="headermain__search">
+                  <form action="">
+                    <div class="searchinput">
+                      <input placeholder="Я ищу..." id="title-search-input_fixed" />
+                      <button type="submit"><img src="img/Search.svg" alt="" /></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="headermain__right">
+                <div class="headermain__contacts"></div>
+                <div class="headermain__iconlinks">
+                  <div class="iconlinks">
+                    <div class="iconlinks__item">
+                      <a href="#" class="iconlinks__link"
+                        ><span class="iconlinks__icon"><img src="img/icnLogin.svg" alt="" /> </span
+                        ><span class="iconlinks__text">Кабинет</span></a
+                      >
+                    </div>
+                    <div class="iconlinks__item">
+                      <a href="#" class="iconlinks__link"
+                        ><span class="iconlinks__badge">2</span>
+                        <span class="iconlinks__icon"><img src="img/icnHeart.svg" alt="" /> </span
+                        ><span class="iconlinks__text">Избранное</span></a
+                      >
+                    </div>
+                    <div class="iconlinks__item">
+                      <a href="#" class="iconlinks__link"
+                        ><span class="iconlinks__badge">13</span>
+                        <span class="iconlinks__icon"><img src="img/icnCart.svg" alt="" /> </span
+                        ><span class="iconlinks__text">Корзина</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="pageheader">
+        <div class="container">
+          <div class="pagetitle"><h1>Политика конфиденциальности</h1></div>
+        </div>
+      </div>
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__items">
+            <ul>
+              <li>
+                <a href="/"><span>Рыбспецпродукт</span></a>
+              </li>
+              <li>
+                <a href=""><span>Каталог</span></a>
+              </li>
+              <li><span>Рыба мороженная</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="container">
+          <div class="pagecontent">
+            <div class="pagetext">
+              <p>
+                Политика в отношении обработки персональных данных<br />1. Общие положения<br />Настоящая политика
+                обработки персональных данных составлена в соответствии с требованиями Федерального закона
+                от 27.07.2006. № 152-ФЗ «О персональных данных» (далее — Закон о персональных данных) и определяет
+                порядок обработки персональных данных и меры по обеспечению безопасности персональных данных,
+                предпринимаемые Михайловым Иваном Сергеевичем (далее — Оператор).<br />1.1. Оператор ставит своей
+                важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека
+                и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность
+                частной жизни, личную и семейную тайну.<br />1.2. Настоящая политика Оператора в отношении обработки
+                персональных данных (далее — Политика) применяется ко всей информации, которую Оператор может получить
+                о посетителях веб-сайта httpsː//thismywebsite·com.<br />2. Основные понятия, используемые в Политике<br />2.1.
+                Автоматизированная обработка персональных данных — обработка персональных данных с помощью средств
+                вычислительной техники.<br />2.2. Блокирование персональных данных — временное прекращение обработки
+                персональных данных (за исключением случаев, если обработка необходима для уточнения персональных
+                данных).<br />2.3. Веб-сайт — совокупность графических и информационных материалов, а также программ для
+                ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому
+                адресу httpsː//thismywebsite·com.<br />2.4. Информационная система персональных данных — совокупность
+                содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий
+                и технических средств.<br />2.5. Обезличивание персональных данных — действия, в результате которых
+                невозможно определить без использования дополнительной информации принадлежность персональных данных
+                конкретному Пользователю или иному субъекту персональных данных.<br />2.6. Обработка персональных
+                данных — любое действие (операция) или совокупность действий (операций), совершаемых с использованием
+                средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись,
+                систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование,
+                передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение
+                персональных данных.<br />2.7. Оператор — государственный орган, муниципальный орган, юридическое или
+                физическое лицо, самостоятельно или совместно с другими лицами организующие и/или осуществляющие
+                обработку персональных данных, а также определяющие цели обработки персональных данных, состав
+                персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.<br />2.8.
+                Персональные данные — любая информация, относящаяся прямо или косвенно к определенному или определяемому
+                Пользователю веб-сайта httpsː//thismywebsite·com.<br />2.9. Персональные данные, разрешенные субъектом
+                персональных данных для распространения, — персональные данные, доступ неограниченного круга лиц
+                к которым предоставлен субъектом персональных данных путем дачи согласия на обработку персональных
+                данных, разрешенных субъектом персональных данных для распространения в порядке, предусмотренном Законом
+                о персональных данных (далее — персональные данные, разрешенные для распространения).<br />2.10.
+                Пользователь — любой посетитель веб-сайта httpsː//thismywebsite·com.<br />2.11. Предоставление
+                персональных данных — действия, направленные на раскрытие персональных данных определенному лицу или
+                определенному кругу лиц.<br />2.12. Распространение персональных данных — любые действия, направленные
+                на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или
+                на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование
+                персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных
+                сетях или предоставление доступа к персональным данным каким-либо иным способом.<br />2.13.
+                Трансграничная передача персональных данных — передача персональных данных на территорию иностранного
+                государства органу власти иностранного государства, иностранному физическому или иностранному
+                юридическому лицу.<br />2.14. Уничтожение персональных данных — любые действия, в результате которых
+                персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания
+                персональных данных в информационной системе персональных данных и/или уничтожаются материальные
+                носители персональных данных.<br />3. Основные права и обязанности Оператора<br />3.1. Оператор имеет
+                право:<br />— получать от субъекта персональных данных достоверные информацию и/или документы,
+                содержащие персональные данные;<br />— в случае отзыва субъектом персональных данных согласия
+                на обработку персональных данных, а также, направления обращения с требованием о прекращении обработки
+                персональных данных, Оператор вправе продолжить обработку персональных данных без согласия субъекта
+                персональных данных при наличии оснований, указанных в Законе о персональных данных;<br />— самостоятельно
+                определять состав и перечень мер, необходимых и достаточных для обеспечения выполнения обязанностей,
+                предусмотренных Законом о персональных данных и принятыми в соответствии с ним нормативными правовыми
+                актами, если иное не предусмотрено Законом о персональных данных или другими федеральными законами.<br />3.2.
+                Оператор обязан:<br />— предоставлять субъекту персональных данных по его просьбе информацию, касающуюся
+                обработки его персональных данных;<br />— организовывать обработку персональных данных в порядке,
+                установленном действующим законодательством РФ;<br />— отвечать на обращения и запросы субъектов
+                персональных данных и их законных представителей в соответствии с требованиями Закона о персональных
+                данных;<br />— сообщать в уполномоченный орган по защите прав субъектов персональных данных по запросу
+                этого органа необходимую информацию в течение 10 дней с даты получения такого запроса;<br />— публиковать
+                или иным образом обеспечивать неограниченный доступ к настоящей Политике в отношении обработки
+                персональных данных;<br />— принимать правовые, организационные и технические меры для защиты
+                персональных данных от неправомерного или случайного доступа к ним, уничтожения, изменения,
+                блокирования, копирования, предоставления, распространения персональных данных, а также от иных
+                неправомерных действий в отношении персональных данных;<br />— прекратить передачу (распространение,
+                предоставление, доступ) персональных данных, прекратить обработку и уничтожить персональные данные
+                в порядке и случаях, предусмотренных Законом о персональных данных;<br />— исполнять иные обязанности,
+                предусмотренные Законом о персональных данных.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="subscribeblock">
+      <div class="container subscribe">
+        <div class="subscribe__wrapper">
+          <div class="subscribe__item subscribe__header">
+            <div class="subscribe__title">Подпишитесь на нашу рассылку</div>
+          </div>
+          <div class="subscribe__item subscribe__form">
+            <form action="">
+              <div class="subscribe__formcontent">
+                <div class="subscribe__input"><input placeholder="Ваш email" /></div>
+                <div class="subscribe__button"><button type="submit" class="btn_main">Подписаться</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="footer">
+      <div class="footer__main">
+        <div class="container">
+          <div class="footer__items">
+            <div class="footer__col footer__col_info">
+              <div class="footer__informblock">
+                <div class="footer__logo"><img src="img/logo.svg" alt="" /></div>
+                <div class="footer__contacts">
+                  <div class="contacts">
+                    <div class="contacts__phone"><a href="tel:+7 495 555 55 55">+7 495 555 55 55</a></div>
+                    <div class="footer__callback">
+                      <div class="headertop__social">
+                        <div class="socials">
+                          <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt="" /></a
+                          ><a href="#" class="socials__item"><img src="img/Telegram.svg" alt="" /></a>
+                        </div>
+                      </div>
+                      <div class="headertop__callback">
+                        <a href="#popup_callback" data-toggle="modal" class="callbacklink">Заказать звонок</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__address">
+                  <div class="footer__subtitle">Фактический адрес</div>
+                  <div class="footer__text">г. Москва, ул. Освобождения 35, пр.2 , д.4</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="footer__items">
+                <div class="footer__col footer__catalog">
+                  <div class="footer__title wave">Каталог</div>
+                  <div class="footer__menu">
+                    <ul>
+                      <li><a href="">Икра</a></li>
+                      <li><a href="">Копчености</a></li>
+                      <li><a href="">Рыба соленая</a></li>
+                      <li><a href="">Рыба вяленая / сушеная</a></li>
+                      <li><a href="">Рыба замороженная</a></li>
+                      <li><a href="">Морепродукты</a></li>
+                      <li><a href="">Готовая продукция</a></li>
+                      <li><a href="">Консервы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__col">
+                  <div class="footer__title wave">О компании</div>
+                  <div class="footer__menu">
+                    <ul>
+                      <li><a href="">О нас</a></li>
+                      <li><a href="">Магазины</a></li>
+                      <li><a href="">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__title">Информация</div>
+                  <div class="footer__menu">
+                    <ul>
+                      <li><a href="">Доставка и оплата</a></li>
+                      <li><a href="">Статьи</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__col footer__col_right">
+              <div class="footer__aside">
+                <div class="footer__block">
+                  <div class="footer__title wave">Остались вопросы?</div>
+                  <div class="footer__text_lg">Задайте их нам прямо сейчас</div>
+                  <div class="footer__ask"><a href="#popup_callback" class="btn_border">Задать вопрос</a></div>
+                </div>
+                <div class="footer__block footer__block_payment">
+                  <div class="footer__title wave">Мы принимаем</div>
+                  <div class="footer__payment">
+                    <div class="footer__icons">
+                      <div class="footer__icon"><img src="img/visa.svg" alt="" /></div>
+                      <div class="footer__icon"><img src="img/mastercard.svg" alt="" /></div>
+                      <div class="footer__icon"><img src="img/mir.svg" alt="" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__items">
+            <div class="footer__col">
+              <div class="footer__cols flex items-center">
+                <div class="footer__maincopy">2024 © РЫБСПЕЦПРОДУКТ</div>
+                <div class="footer__links">
+                  <div class="footer__link"><a href="" class="borderlink">Политика конфиденциальности</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__col footer__col_right">
+              <div class="footer__aside">
+                <div class="footer__dev">
+                  <a href="" class="fdev"
+                    ><span class="fdev__title">Разработано в:</span>
+                    <span class="fdev__icon"><img src="img/empis.svg" alt="" /></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="toTop"><img src="img/up.svg" alt="" /></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
