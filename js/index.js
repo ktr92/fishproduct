@@ -504,6 +504,7 @@ function closeByClickOutside(element, button) {
       if (!$(event.target).closest(`${element},${button}`).length) {
           $(button).removeClass('active')
           $(element).removeClass('active')
+          $('.jsbackdrop').removeClass('active')
       }
   });
   
@@ -511,15 +512,17 @@ function closeByClickOutside(element, button) {
       if (e.key === "Escape") { // escape key maps to keycode `27`
           $(button).removeClass('active')
           $(element).removeClass('active')
+          $('.jsbackdrop').removeClass('active')
       }
   });
 
-  $('.jsbackdrop').removeClass('active')
+ 
 }
 function closeByOutsideSelect() {
   $(document).click(function(event) {
       if (!$(event.target).closest(`.dropdown-select__list,.dropdown-select__title`).length) {
           $('.dropdown-select__list').hide()
+          $('.jsbackdrop').removeClass('active')
          
       }
   });
@@ -527,6 +530,7 @@ function closeByOutsideSelect() {
   $(document).keyup(function(e) {
       if (e.key === "Escape") { // escape key maps to keycode `27`
           $('.dropdown-select__list').hide()
+          $('.jsbackdrop').removeClass('active')
       }
   });
   $('.jsbackdrop').removeClass('active')
