@@ -9708,7 +9708,9 @@ h4 {
     margin-left: 0; }
     .errorpage__links li a {
       font-size: 14px;
-      line-height: 100%; } }
+      line-height: 100%; }
+  .wavemask_type2 {
+    height: 10px; } }
 
 @media only screen and (max-width: 480px) {
   .category__item_large,
