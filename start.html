@@ -1,547 +1,833 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-    <title>MAIN</title>
-    <link rel="preload" href="fonts/Opel-Sans-Regular.woff" as="font" type="font/woff" crossorigin />
-    <link rel="preload" href="fonts/Opel-Sans-Bold.woff" as="font" type="font/woff" crossorigin />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/slick.min.css" />
-    <link rel="stylesheet" href="css/slick-theme.min.css" />
-    <link rel="stylesheet" href="css/lightbox.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/main.bundle.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/maskedinput.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.zoom.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/selectbox.js"></script>
-  </head>
-  <body>
-    <div class="jsbackdrop"></div>
-    <div class="mobilemenu">
-      <div class="mobilemenu__wrapper">
-        <div class="mobilemenu__block">
-          <div class="mobilemenu__menu">
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content mobilemenu--catalog jscatalog">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/burger.svg" alt="" /></span
-                  ><span class="mobilemenu__name">Каталог</span> </a
-                ><span class="js-toggler"><img src="img/ChevronWhite.svg" alt="" /></span>
-              </div>
-            </div>
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/icnHeart.svg" alt="" /></span
-                  ><span class="mobilemenu__name">Избранное</span></a
-                >
-              </div>
-            </div>
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/icnCart.svg" alt="" /></span
-                  ><span class="mobilemenu__name">Корзина</span></a
-                >
-                <div class="mobilemenu__cartinfo">
-                  <div class="mobilemenu__cartcount">13</div>
-                  <div class="mobilemenu__cartsumm">На сумму: 5 950 <span class="rouble">₽</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/icnLogin.svg" alt="" /></span
-                  ><span class="mobilemenu__name">Мой кабинет</span></a
-                >
-              </div>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title>MAIN</title>
+<!--   <link rel="shortcut icon" href="favicon/favicon.ico" />
+ -->  
+  <link rel="preload" href="fonts/Opel-Sans-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Opel-Sans-Bold.woff" as="font" type="font/woff" crossorigin>
+
+  
+
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/slick-theme.min.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/main.bundle.css">
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/maskedinput.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+ 
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.zoom.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/selectbox.js"></script>
+
+  <!-- <script src="js/fixedcart.js"></script> -->
+
+</head>
+
+<body>
+
+
+<div class="jsbackdrop"></div>
+
+
+<div class="mobilemenu">
+  <div class="mobilemenu__wrapper">
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__menu">
+        <div class="mobilemenu__item">
+          <div class="mobilemenu__content mobilemenu--catalog jscatalog">
+            <a href="#" class="mobilemenu__link">
+            <span class="mobilemenu__icon"><img src="img/burger.svg" alt=""></span>
+            <span class="mobilemenu__name">Каталог</span>
+            </a>    
+            <span class="js-toggler"><img src="img/ChevronWhite.svg" alt=""></span>
           </div>
         </div>
-        <div class="mobilemenu__block">
-          <div class="mobilemenu__menu">
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/icnInfo.svg" alt="" /></span
-                  ><span class="mobilemenu__name">О нас</span></a
-                >
-              </div>
-            </div>
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/icnContact.svg" alt="" /></span
-                  ><span class="mobilemenu__name">Контакты</span></a
-                >
-              </div>
-            </div>
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/icnBLog.svg" alt="" /></span
-                  ><span class="mobilemenu__name">Блог</span></a
-                >
-              </div>
-            </div>
-            <div class="mobilemenu__item">
-              <div class="mobilemenu__content">
-                <a href="#" class="mobilemenu__link"
-                  ><span class="mobilemenu__icon"><img src="img/icnDelivery.svg" alt="" /></span
-                  ><span class="mobilemenu__name">Доставка и оплата</span></a
-                >
-              </div>
-            </div>
+       
+        <div class="mobilemenu__item">
+          <div class="mobilemenu__content">
+            <a href="#" class="mobilemenu__link">
+            <span class="mobilemenu__icon"><img src="img/icnHeart.svg" alt=""></span>
+            <span class="mobilemenu__name">Избранное</span>
+            </a>    
           </div>
         </div>
-        <div class="mobilemenu__block">
-          <div class="mobilemenu__footer">
-            <div class="footer__contacts">
-              <div class="contacts__phone"><a href="tel:+7 495 555 55 55">+7 495 555 55 55</a></div>
-              <div class="footer__callback">
-                <div class="headertop__social">
-                  <div class="socials">
-                    <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt="" /></a
-                    ><a href="#" class="socials__item"><img src="img/Telegram.svg" alt="" /></a>
-                  </div>
-                </div>
-                <div class="headertop__callback">
-                  <a href="#popup_callback" data-toggle="modal" class="callbacklink">Заказать звонок</a>
-                </div>
-              </div>
-            </div>
+        <div class="mobilemenu__item">
+          <div class="mobilemenu__content">
+            <a href="#" class="mobilemenu__link">
+              <span class="mobilemenu__icon"><img src="img/icnCart.svg" alt=""></span>
+              <span class="mobilemenu__name">Корзина</span>
+            </a>   
+            <div class="mobilemenu__cartinfo">
+              <div class="mobilemenu__cartcount">13</div>
+              <div class="mobilemenu__cartsumm">На сумму: 5 950 <span class="rouble">₽</span>  </div>
+            </div><!-- /.mobilemenu__cartinfo --> 
           </div>
         </div>
-        <div class="mobilemenu__block">
-          <ul class="mobilemenu__links">
-            <li><a href="#" class="mobilemenu__link location_icon">Магазины</a></li>
-          </ul>
+        <div class="mobilemenu__item">
+          <div class="mobilemenu__content">
+            <a href="#" class="mobilemenu__link">
+            <span class="mobilemenu__icon"><img src="img/icnLogin.svg" alt=""></span>
+            <span class="mobilemenu__name">Мой кабинет</span>
+            </a>    
+          </div>
         </div>
       </div>
+      <!-- /.mobilemenu__menu -->
     </div>
-    <header id="header" class="header">
-      <div class="header__topline">
-        <div class="container">
-          <div class="headercontainer" id="headercontainer">
-            <div class="mobilepanel">
-              <div class="mobilepanel__left">
-                <div class="mobilepanel__logo">
-                  <a href="#" class="logo"><img src="img/logo.svg" alt="" /></a>
-                </div>
-              </div>
-              <div class="mobilepanel__right">
-                <div class="headermain__iconlinks">
-                  <div class="iconlinks">
-                    <div class="iconlinks__item">
-                      <a href="#" class="iconlinks__link"
-                        ><span class="iconlinks__badge">13</span>
-                        <span class="iconlinks__icon"><img src="img/icnCart.svg" alt="" /></span
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="mobilepanel__menubutton">
-                  <button class="menubutton">
-                    <img src="img/mobilebutton.svg" alt="" class="menubutton__open" />
-                    <img src="img/menubutton__close.svg" alt="" class="menubutton__close" />
-                  </button>
-                </div>
-              </div>
+    <!-- /.mobilemenu__block -->
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__menu">
+        
+        <div class="mobilemenu__item">
+          <div class="mobilemenu__content">
+            <a href="#" class="mobilemenu__link">
+            <span class="mobilemenu__icon"><img src="img/icnInfo.svg" alt=""></span>
+            <span class="mobilemenu__name">О нас</span>
+            </a>    
+          </div>
+        </div>
+        
+       
+      
+        <div class="mobilemenu__item">
+          <div class="mobilemenu__content">
+            <a href="#" class="mobilemenu__link">
+            <span class="mobilemenu__icon"><img src="img/icnBLog.svg" alt=""></span>
+            <span class="mobilemenu__name">Блог</span>
+            </a>    
+          </div>
+        </div>  <div class="mobilemenu__item">
+          <div class="mobilemenu__content">
+            <a href="#" class="mobilemenu__link">
+            <span class="mobilemenu__icon"><img src="img/icnContact.svg" alt=""></span>
+            <span class="mobilemenu__name">Контакты</span>
+            </a>    
+          </div>
+        </div>
+        <div class="mobilemenu__item">
+          <div class="mobilemenu__content">
+            <a href="#" class="mobilemenu__link">
+            <span class="mobilemenu__icon"><img src="img/icnDelivery.svg" alt=""></span>
+            <span class="mobilemenu__name">Доставка и оплата</span>
+            </a>    
+          </div>
+        </div>
+      </div>
+      <!-- /.mobilemenu__menu -->
+    </div>
+    <!-- /.mobilemenu__block -->
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__footer">
+        <div class="footer__contacts">
+          <div class="contacts__phone">
+            <a href="tel:+7 495 555 55 55">+7 495 555 55 55</a>
+          </div>
+          <div class="footer__callback">
+            <div class="headertop__social">
+              <div class="socials">
+                <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt=""></a>
+                <a href="#" class="socials__item"><img src="img/Telegram.svg" alt=""></a>
+              </div><!-- /.socials -->
             </div>
-            <div class="headertop">
-              <div class="headertop__left">
-                <div class="headertop__leftitems">
-                  <div class="topmenu">
-                    <div class="topmenu__wrapper">
-                      <div class="topmenu__items">
-                        <ul>
-                          <li><a href="#" class="location_icon">Магазины</a></li>
-                          <li><a href="#">О нас</a></li>
-                          <li><a href="#">Доставка</a></li>
-                          <li><a href="#">Блог</a></li>
-                          <li><a href="#">Контакты</a></li>
+            <div class="headertop__callback">
+              <a href="#popup_callback" data-toggle="modal" class="callbacklink">
+                Заказать звонок
+              </a><!-- /.callback -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.mobilemenu__footer -->
+    </div>
+    <!-- /.mobilemenu__block -->
+    <div class="mobilemenu__block">
+        <ul class="mobilemenu__links">
+          <li><a href="#" class="mobilemenu__link location_icon">Магазины</a></li>
+        </ul><!-- /.mobilemenu__links -->
+    </div>
+  </div>
+  <!-- /.mobilemenu__wrapper -->
+</div>
+<!-- /.mobilepanel -->
+<header id="header" class="header">
+  <div class="header__topline">
+    <div class="container">
+      <div class="headercontainer" id="headercontainer">
+        <div class="mobilepanel">
+          <div class="mobilepanel__left">
+            <div class="mobilepanel__logo"><a href="/dist/index.html" class="logo"><img src="img/logo.svg" alt=""></a></div>
+           
+          </div>
+          <!-- /.mobilepanel__left -->
+          <div class="mobilepanel__right">
+            <div class="headermain__iconlinks">
+              <div class="iconlinks">
+              
+                <div class="iconlinks__item">
+                  <a href="#" class="iconlinks__link">
+                  <span class="iconlinks__badge">13</span>
+                  <span class="iconlinks__icon">
+                  <img src="img/icnCart.svg" alt="">
+                  </span>
+                  </a>
+                </div>
+              </div>
+              <!-- /.iconlinks -->
+            </div>
+          <div class="mobilepanel__menubutton">
+            <button class="menubutton">
+              <img src="img/mobilebutton.svg" alt="" class="menubutton__open">
+              <img src="img/menubutton__close.svg" alt="" class="menubutton__close">
+            </button>
+          </div>
+          <!-- /.mobilepanel__menubutton -->
+        </div><!-- /.mobilepanel__right -->
+
+        </div>
+        <!-- /.mobilepanel -->
+        <div class="headertop">
+          <div class="headertop__left">
+            <div class="headertop__leftitems">
+              <div class="topmenu">
+                <div class="topmenu__wrapper">
+                  <div class="topmenu__items">
+                    <ul>
+                      <li><a href="#" class="location_icon">Магазины</a></li>
+                      <li><a href="#">О нас</a></li>
+                      <li><a href="#">Доставка</a></li>
+                      <li><a href="#">Блог</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <!-- /.topmenu__items -->
+                </div>
+                <!-- /.topmenu__wrapper -->
+              </div>
+              <!-- /.topmenu -->
+            </div>
+            <!-- /.headertop__leftitems -->
+          </div>
+          <!-- /.headertop__left -->
+          <div class="headertop__right">
+            <div class="headertop__rightitems">
+              <div class="headertop__phone">
+                <a href="tel:+7 495 555 55 55" class="phonelink">+7 495 555 55 55</a><!-- /.phone -->
+              </div><!-- /.headertop__phone -->
+              <div class="headertop__social">
+                <div class="socials">
+                  <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt=""></a>
+                  <a href="#" class="socials__item"><img src="img/Telegram.svg" alt=""></a>
+                </div><!-- /.socials -->
+              </div><!-- /.headertop__social -->
+              <div class="headertop__callback">
+                <a href="#popup_callback" data-toggle="modal" class="callbacklink">
+                  Заказать звонок
+                </a><!-- /.callback -->
+              </div><!-- /.headertop__callback -->
+            </div>
+            <!-- /.headertop__rightitems -->
+          </div>
+          <!-- /.headertop__right -->
+        </div>
+        <!-- /.headertop -->
+       
+      </div>
+    </div>
+  </div>
+  <div class="headerwrapper">
+    <div class="container">
+        <div id="headermain">
+          <div class="headermain">
+            <div class="headermain__left">
+              <div class="headermain__logo"><a href="/dist/index.html" class="logo"><img src="img/logo.svg" alt=""></a></div>
+           <!--    <div class="headermain__descr"><span></span></div> -->
+              <div class="headermain__menu">
+
+                <button class="mainmenubtn"> 
+                  <span>
+                      <img class="burgericon icon--white" src="img/burger.svg" alt="">
+                      <!-- <img class="closeicon" src="img/closemenu.svg" alt="">     -->                
+                      <span>Каталог</span>
+                  </span>
+                  <span><img src="img/expand.svg" alt=""></span>
+               
+                </button>
+
+                <div class="mainmenu">
+                  <div class="mainmenu__wrapper">
+                    <div class="mainmenu__items">
+                      <div class="mainmenu__level_1">
+                        <ul class="mainmenuLevelOne">
+                          <li class="mainmenuLevelOne__item">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menuFire.svg" alt=""></span>
+                            <span class="mainmenu__name">Акции</span> 
+                            </a>
+                          </li>
+                          <li class="mainmenuLevelOne__item">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menuDiamond.svg" alt=""></span>
+                            <span class="mainmenu__name">Новинки</span> 
+                            </a>
+                          </li>
+                          <li class="mainmenuLevelOne__item">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menuCaviar.svg" alt=""></span>
+                            <span class="mainmenu__name">Икра</span> 
+                            </a>
+                          </li>
+                          <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menuBream.svg" alt=""></span>
+                            <span class="mainmenu__name">Горячее копчение</span>
+                            </a>
+                            <div class="mainmenu__level_2">
+                              <ul class="mainmenuLevelTwo">
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                               
+                              </ul>
+                            </div>
+                          </li>
+
+                          <li class="mainmenuLevelOne__item">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menufish.svg" alt=""></span>
+                            <span class="mainmenu__name">Холодное копчение</span>
+                            </a>
+                          </li>
+                         
+                          <li class="mainmenuLevelOne__item">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menugrilled.svg" alt=""></span>
+                            <span class="mainmenu__name">Рыба соленая</span>
+                            </a>
+                          </li>
+
+                          <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menusalting.svg" alt=""></span>
+                            <span class="mainmenu__name">Рыба вяленая / Сушеная</span>
+                            </a>
+                            <div class="mainmenu__level_2">
+                              <ul class="mainmenuLevelTwo">
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                               
+                              </ul>
+                            </div>
+                          </li>
+
+                          <li class="mainmenuLevelOne__item">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menufish1.svg" alt=""></span>
+                            <span class="mainmenu__name">Рыба замороженная</span>
+                            </a>
+                          </li>
+
+                          <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menushrimp.svg" alt=""></span>
+                            <span class="mainmenu__name">Морепродукты</span>
+                            </a>
+                            <div class="mainmenu__level_2">
+                              <ul class="mainmenuLevelTwo">
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                               
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
+                            <a href="" class="mainmenuLevelOne__link">
+                            <span class="mainmenu__icon"><img src="img/menucanned-food.svg" alt=""></span>
+                            <span class="mainmenu__name">Консервы</span>
+                            </a>
+                            <div class="mainmenu__level_2">
+                              <ul class="mainmenuLevelTwo">
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                                <li class="mainmenuLevelTwo__item">
+                                  <a class="mainmenuLevelTwo__link" href="">
+                                  <span>Подкатегория </span>
+                                  </a>
+                                </li>
+                               
+                              </ul>
+                            </div>
+                          </li>
+                         
                         </ul>
                       </div>
+                      <!-- /.mainmenu__level_1 -->
                     </div>
+                    <!-- /.mainmenu__items -->
+                  </div>
+                  <!-- /.mainmenu__wrapper -->
+                </div>
+                <!-- /.mainmenu -->
+              </div>
+              <!-- /.headermain__menu -->
+              <div class="headermain__search">
+                <form action="">
+                  <div class="searchinput">
+                     <input type="text" placeholder="Я ищу..." id="title-search-input_fixed">
+                     <button type="submit"><img src="img/Search.svg" alt=""></button>
+
+                    <!-- <input type="text" placeholder='' id='title-search-input_fixed'> -->
+                  </div>
+                </form>
+                <div class="searchpopup">
+                  <div class="searchpopup__wrapper">
+                    <div class="searchpopup__items">
+                      <div class="searchpopup__item">
+                        <a href="" class="searchpopup__link">
+                          <span class="searchpopup__content">
+                            <span class="searchpopup__image">
+                              <span class="searchpopup__img">
+                                <img src="img/product2.jpg">
+                              </span><!-- /.searchpopup__img -->
+                            </span><!-- /.searchpopup__image -->
+                            <span class="searchpopup__main">
+                              <span class="searchpopup__title">Филе краба северного варено-мороженый, 70/90 10...</span><!-- /.searchpopup__title -->
+                              <span class="searchpopup__prices">
+                                <span class="searchpopup__currentprice productcard__price">322,99 <span class="rouble">₽</span>  </span><!-- /.searchpopup__currentprice -->
+                                <span class="searchpopup__oldprice productcard__oldprice">422,99 <span class="rouble">₽</span> </span><!-- /.searchpopup__oldprice -->
+                              </span><!-- /.searchpopup__prices -->
+                            </span><!-- /.searchpopup__main -->
+                          </span><!-- /.searchpopup__content -->
+                        </a><!-- /.searchpopup__link -->
+                      </div><!-- /.searchpopup__item -->
+                      <div class="searchpopup__item">
+                        <a href="" class="searchpopup__link">
+                          <span class="searchpopup__content">
+                            <span class="searchpopup__image">
+                              <span class="searchpopup__img">
+                                <img src="img/product2.jpg">
+                              </span><!-- /.searchpopup__img -->
+                            </span><!-- /.searchpopup__image -->
+                            <span class="searchpopup__main">
+                              <span class="searchpopup__title">Филе краба северного варено-мороженый, 70/90 10...</span><!-- /.searchpopup__title -->
+                              <span class="searchpopup__prices">
+                                <span class="searchpopup__currentprice productcard__price">322,99 <span class="rouble">₽</span>  </span><!-- /.searchpopup__currentprice -->
+                                <span class="searchpopup__oldprice productcard__oldprice">422,99 <span class="rouble">₽</span> </span><!-- /.searchpopup__oldprice -->
+                              </span><!-- /.searchpopup__prices -->
+                            </span><!-- /.searchpopup__main -->
+                          </span><!-- /.searchpopup__content -->
+                        </a><!-- /.searchpopup__link -->
+                      </div><!-- /.searchpopup__item -->
+                      <div class="searchpopup__item">
+                        <a href="" class="searchpopup__link">
+                          <span class="searchpopup__content">
+                            <span class="searchpopup__image">
+                              <span class="searchpopup__img">
+                                <img src="img/product2.jpg">
+                              </span><!-- /.searchpopup__img -->
+                            </span><!-- /.searchpopup__image -->
+                            <span class="searchpopup__main">
+                              <span class="searchpopup__title">Филе краба северного варено-мороженый, 70/90 10...</span><!-- /.searchpopup__title -->
+                              <span class="searchpopup__prices">
+                                <span class="searchpopup__currentprice productcard__price">322,99 <span class="rouble">₽</span>  </span><!-- /.searchpopup__currentprice -->
+                                <span class="searchpopup__oldprice productcard__oldprice">422,99 <span class="rouble">₽</span> </span><!-- /.searchpopup__oldprice -->
+                              </span><!-- /.searchpopup__prices -->
+                            </span><!-- /.searchpopup__main -->
+                          </span><!-- /.searchpopup__content -->
+                        </a><!-- /.searchpopup__link -->
+                      </div><!-- /.searchpopup__item -->
+                      <div class="searchpopup__item">
+                        <a href="" class="searchpopup__link">
+                          <span class="searchpopup__content">
+                            <span class="searchpopup__image">
+                              <span class="searchpopup__img">
+                                <img src="img/product2.jpg">
+                              </span><!-- /.searchpopup__img -->
+                            </span><!-- /.searchpopup__image -->
+                            <span class="searchpopup__main">
+                              <span class="searchpopup__title">Филе краба северного варено-мороженый, 70/90 10...</span><!-- /.searchpopup__title -->
+                              <span class="searchpopup__prices">
+                                <span class="searchpopup__currentprice productcard__price">322,99 <span class="rouble">₽</span>  </span><!-- /.searchpopup__currentprice -->
+                                <span class="searchpopup__oldprice productcard__oldprice">422,99 <span class="rouble">₽</span> </span><!-- /.searchpopup__oldprice -->
+                              </span><!-- /.searchpopup__prices -->
+                            </span><!-- /.searchpopup__main -->
+                          </span><!-- /.searchpopup__content -->
+                        </a><!-- /.searchpopup__link -->
+                      </div><!-- /.searchpopup__item -->
+                      <div class="searchpopup__item">
+                        <a href="" class="searchpopup__link">
+                          <span class="searchpopup__content">
+                            <span class="searchpopup__image">
+                              <span class="searchpopup__img">
+                                <img src="img/product2.jpg">
+                              </span><!-- /.searchpopup__img -->
+                            </span><!-- /.searchpopup__image -->
+                            <span class="searchpopup__main">
+                              <span class="searchpopup__title">Филе краба северного варено-мороженый, 70/90 10...</span><!-- /.searchpopup__title -->
+                              <span class="searchpopup__prices">
+                                <span class="searchpopup__currentprice productcard__price">322,99 <span class="rouble">₽</span>  </span><!-- /.searchpopup__currentprice -->
+                                <span class="searchpopup__oldprice productcard__oldprice">422,99 <span class="rouble">₽</span> </span><!-- /.searchpopup__oldprice -->
+                              </span><!-- /.searchpopup__prices -->
+                            </span><!-- /.searchpopup__main -->
+                          </span><!-- /.searchpopup__content -->
+                        </a><!-- /.searchpopup__link -->
+                      </div><!-- /.searchpopup__item -->
+                      <div class="searchpopup__item">
+                        <a href="" class="searchpopup__link">
+                          <span class="searchpopup__content">
+                            <span class="searchpopup__image">
+                              <span class="searchpopup__img">
+                                <img src="img/product2.jpg">
+                              </span><!-- /.searchpopup__img -->
+                            </span><!-- /.searchpopup__image -->
+                            <span class="searchpopup__main">
+                              <span class="searchpopup__title">Филе краба северного варено-мороженый, 70/90 10...</span><!-- /.searchpopup__title -->
+                              <span class="searchpopup__prices">
+                                <span class="searchpopup__currentprice productcard__price">322,99 <span class="rouble">₽</span>  </span><!-- /.searchpopup__currentprice -->
+                                <span class="searchpopup__oldprice productcard__oldprice">422,99 <span class="rouble">₽</span> </span><!-- /.searchpopup__oldprice -->
+                              </span><!-- /.searchpopup__prices -->
+                            </span><!-- /.searchpopup__main -->
+                          </span><!-- /.searchpopup__content -->
+                        </a><!-- /.searchpopup__link -->
+                      </div><!-- /.searchpopup__item -->
+                      <div class="searchpopup__item">
+                        <a href="" class="searchpopup__link">
+                          <span class="searchpopup__content">
+                            <span class="searchpopup__image">
+                              <span class="searchpopup__img">
+                                <img src="img/product2.jpg">
+                              </span><!-- /.searchpopup__img -->
+                            </span><!-- /.searchpopup__image -->
+                            <span class="searchpopup__main">
+                              <span class="searchpopup__title">Филе краба северного варено-мороженый, 70/90 10...</span><!-- /.searchpopup__title -->
+                              <span class="searchpopup__prices">
+                                <span class="searchpopup__currentprice productcard__price">322,99 <span class="rouble">₽</span>  </span><!-- /.searchpopup__currentprice -->
+                                <span class="searchpopup__oldprice productcard__oldprice">422,99 <span class="rouble">₽</span> </span><!-- /.searchpopup__oldprice -->
+                              </span><!-- /.searchpopup__prices -->
+                            </span><!-- /.searchpopup__main -->
+                          </span><!-- /.searchpopup__content -->
+                        </a><!-- /.searchpopup__link -->
+                      </div><!-- /.searchpopup__item -->
+                    </div><!-- /.searchpopup__items -->
+                  </div><!-- /.searchpopup__wrapper -->
+                </div><!-- /.searchpopup -->
+              </div>
+            </div>
+            <!-- /.headermain__left-->
+            <div class="headermain__right">
+              <div class="headermain__contacts">
+               
+              </div>
+              <!-- /.headermain__contacts -->
+              <div class="headermain__iconlinks">
+                <div class="iconlinks">
+                  <div class="iconlinks__item">
+                    <a href="#" class="iconlinks__link">
+                    <span class="iconlinks__icon">
+                    <img src="img/icnLogin.svg" alt="">
+                    </span>
+                    <span class="iconlinks__text">Кабинет</span>
+                    </a>
+                  </div>
+                  <div class="iconlinks__item">
+                    <a href="#" class="iconlinks__link">
+                      <span class="iconlinks__badge">2</span>
+
+                    <span class="iconlinks__icon">
+                    <img src="img/icnHeart.svg" alt="">
+                    </span>
+                    <span class="iconlinks__text">Избранное</span>
+                    </a>
+                  </div>
+                  <div class="iconlinks__item">
+                    <a href="#" class="iconlinks__link">
+                    <span class="iconlinks__badge">13</span>
+                    <span class="iconlinks__icon">
+                    <img src="img/icnCart.svg" alt="">
+                    </span>
+                    <span class="iconlinks__text">Корзина</span>
+                    </a>
                   </div>
                 </div>
+                <!-- /.iconlinks -->
               </div>
-              <div class="headertop__right">
-                <div class="headertop__rightitems">
-                  <div class="headertop__phone">
-                    <a href="tel:+7 495 555 55 55" class="phonelink">+7 495 555 55 55</a>
-                  </div>
+              <!-- /.headermain__iconlinks -->
+            </div>
+            <!-- /.headermain__right -->
+          </div>
+          <!-- /.headermain -->
+        </div>
+
+             
+
+      </div>
+      <!-- /.headercontainer -->
+
+
+  
+    </div>
+  
+
+
+
+</header>
+<!-- /#header.header -->
+<style>
+  li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: inline-block;
+  }
+</style>
+<main>
+    <div class="container">
+     <ul>
+      <li><a href="index.html" target="_blank" rel="noopener noreferrer" class="btn_main">Главная</a></li>
+      <li><a href="catalog_root.html" target="_blank" rel="noopener noreferrer" class="btn_main">Корневая каталога</a></li>
+      <li><a href="catalog.html" target="_blank" rel="noopener noreferrer" class="btn_main">Каталог</a></li>
+      <li><a href="product.html" target="_blank" rel="noopener noreferrer" class="btn_main">Карточка товара (без отзывов)</a></li>
+      <li><a href="product_review.html" target="_blank" rel="noopener noreferrer" class="btn_main">Карточка товара (с отзывами)</a></li>
+      <li><a href="wishlist.html" target="_blank" rel="noopener noreferrer" class="btn_main">Избранное</a></li>
+      <li><a href="popup.html" target="_blank" rel="noopener noreferrer" class="btn_main">Модальные окна</a></li>    
+      <li><a href="blog.html" target="_blank" rel="noopener noreferrer" class="btn_main">Блог</a></li>
+      <li><a href="news_detail.html" target="_blank" rel="noopener noreferrer" class="btn_main">Статья</a></li>
+      <li><a href="about.html" target="_blank" rel="noopener noreferrer" class="btn_main">О компании</a></li>
+      <li><a href="delivery.html" target="_blank" rel="noopener noreferrer" class="btn_main">Доставка</a></li>
+      <li><a href="confirm.html" target="_blank" rel="noopener noreferrer" class="btn_main">Подтверждение заказа</a></li>
+      <li><a href="contacts.html" target="_blank" rel="noopener noreferrer" class="btn_main">Контакты</a></li>
+      <li><a href="shops.html" target="_blank" rel="noopener noreferrer" class="btn_main">Магазины</a></li>
+      <li><a href="politics.html" target="_blank" rel="noopener noreferrer" class="btn_main">Политика</a></li>
+      <li><a href="404.html" target="_blank" rel="noopener noreferrer" class="btn_main">404</a></li>
+      
+     </ul>
+    </div><!-- /.container -->
+</main>
+
+<div class="subscribeblock">
+  <div class="container subscribe">
+    <div class="subscribe__wrapper">
+      <div class="subscribe__item subscribe__header">
+        <div class="subscribe__title">Подпишитесь на нашу рассылку</div>
+      </div><!-- /.subscribe__item -->
+      <div class="subscribe__item subscribe__form">
+          <form action="">
+            <div class="subscribe__formcontent">
+              <div class="subscribe__input">
+                <input type="text" placeholder="Ваш email">
+              </div>
+              <div class="subscribe__button">
+                <button type="submit" class="btn_main">
+                  Подписаться
+                </button>
+              </div>
+            </div><!-- /.subscribe__formcontent -->
+          </form>
+        </div>
+      </div><!-- /.subscribe__item -->
+    </div><!-- /.subscribe__wrapper -->
+  </div><!-- /.container subscribe -->
+<!-- /.subscribeblock -->
+<footer id="footer" class="footer">
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__col footer__col_info">
+          <div class="footer__informblock">
+            <a href="/dist/index.html" class="footer__logo">
+              <img src="img/logo.svg" alt="">
+            </a><!-- /.footer__logo -->
+            <div class="footer__contacts">
+              <div class="contacts">
+                <div class="contacts__phone">
+                  <a href="tel:+7 495 555 55 55">+7 495 555 55 55</a>
+                </div>
+                <div class="footer__callback">
                   <div class="headertop__social">
                     <div class="socials">
-                      <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt="" /></a
-                      ><a href="#" class="socials__item"><img src="img/Telegram.svg" alt="" /></a>
-                    </div>
+                      <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt=""></a>
+                      <a href="#" class="socials__item"><img src="img/Telegram.svg" alt=""></a>
+                    </div><!-- /.socials -->
                   </div>
                   <div class="headertop__callback">
-                    <a href="#popup_callback" data-toggle="modal" class="callbacklink">Заказать звонок</a>
+                    <a href="#popup_callback" data-toggle="modal" class="callbacklink">
+                      Заказать звонок
+                    </a><!-- /.callback -->
                   </div>
-                </div>
+                </div><!-- /.footer__callback -->
               </div>
-            </div>
+            </div><!-- /.footer__phone -->
+          
+            <div class="footer__address">
+              <div class="footer__subtitle">
+                Фактический адрес
+              </div><!-- /.footer__subtitle -->
+              <div class="footer__text"> г. Москва, ул. Освобождения 35, пр.2 , д.4</div><!-- /.footer__text -->
+             
+            </div><!-- /.footer__address -->
+           
           </div>
-        </div>
-      </div>
-      <div class="headerwrapper">
-        <div class="container">
-          <div id="headermain">
-            <div class="headermain">
-              <div class="headermain__left">
-                <div class="headermain__logo">
-                  <a href="#" class="logo"><img src="img/logo.svg" alt="" /></a>
-                </div>
-                <div class="headermain__menu">
-                  <button class="mainmenubtn">
-                    <span><img class="burgericon icon--white" src="img/burger.svg" alt="" /> <span>Каталог</span> </span
-                    ><span><img src="img/expand.svg" alt="" /></span>
-                  </button>
-                  <div class="mainmenu">
-                    <div class="mainmenu__wrapper">
-                      <div class="mainmenu__items">
-                        <div class="mainmenu__level_1">
-                          <ul class="mainmenuLevelOne">
-                            <li class="mainmenuLevelOne__item">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menuFire.svg" alt="" /></span
-                                ><span class="mainmenu__name">Акции</span></a
-                              >
-                            </li>
-                            <li class="mainmenuLevelOne__item">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menuDiamond.svg" alt="" /></span
-                                ><span class="mainmenu__name">Новинки</span></a
-                              >
-                            </li>
-                            <li class="mainmenuLevelOne__item">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menuCaviar.svg" alt="" /></span
-                                ><span class="mainmenu__name">Икра</span></a
-                              >
-                            </li>
-                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menuBream.svg" alt="" /></span
-                                ><span class="mainmenu__name">Горячее копчение</span></a
-                              >
-                              <div class="mainmenu__level_2">
-                                <ul class="mainmenuLevelTwo">
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="mainmenuLevelOne__item">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menufish.svg" alt="" /></span
-                                ><span class="mainmenu__name">Холодное копчение</span></a
-                              >
-                            </li>
-                            <li class="mainmenuLevelOne__item">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menugrilled.svg" alt="" /></span
-                                ><span class="mainmenu__name">Рыба соленая</span></a
-                              >
-                            </li>
-                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menusalting.svg" alt="" /></span
-                                ><span class="mainmenu__name">Рыба вяленая / Сушеная</span></a
-                              >
-                              <div class="mainmenu__level_2">
-                                <ul class="mainmenuLevelTwo">
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="mainmenuLevelOne__item">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menufish1.svg" alt="" /></span
-                                ><span class="mainmenu__name">Рыба замороженная</span></a
-                              >
-                            </li>
-                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menushrimp.svg" alt="" /></span
-                                ><span class="mainmenu__name">Морепродукты</span></a
-                              >
-                              <div class="mainmenu__level_2">
-                                <ul class="mainmenuLevelTwo">
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                              <a href="" class="mainmenuLevelOne__link"
-                                ><span class="mainmenu__icon"><img src="img/menucanned-food.svg" alt="" /></span
-                                ><span class="mainmenu__name">Консервы</span></a
-                              >
-                              <div class="mainmenu__level_2">
-                                <ul class="mainmenuLevelTwo">
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                  <li class="mainmenuLevelTwo__item">
-                                    <a class="mainmenuLevelTwo__link" href=""><span>Подкатегория</span></a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="headermain__search">
-                  <form action="">
-                    <div class="searchinput">
-                      <input placeholder="Я ищу..." id="title-search-input_fixed" />
-                      <button type="submit"><img src="img/Search.svg" alt="" /></button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="headermain__right">
-                <div class="headermain__contacts"></div>
-                <div class="headermain__iconlinks">
-                  <div class="iconlinks">
-                    <div class="iconlinks__item">
-                      <a href="#" class="iconlinks__link"
-                        ><span class="iconlinks__icon"><img src="img/icnLogin.svg" alt="" /> </span
-                        ><span class="iconlinks__text">Кабинет</span></a
-                      >
-                    </div>
-                    <div class="iconlinks__item">
-                      <a href="#" class="iconlinks__link"
-                        ><span class="iconlinks__badge">2</span>
-                        <span class="iconlinks__icon"><img src="img/icnHeart.svg" alt="" /> </span
-                        ><span class="iconlinks__text">Избранное</span></a
-                      >
-                    </div>
-                    <div class="iconlinks__item">
-                      <a href="#" class="iconlinks__link"
-                        ><span class="iconlinks__badge">13</span>
-                        <span class="iconlinks__icon"><img src="img/icnCart.svg" alt="" /> </span
-                        ><span class="iconlinks__text">Корзина</span></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <style>
-      li {
-        margin-bottom: 15px;
-        list-style: none;
-        display: inline-block;
-      }
-    </style>
-    <main>
-      <div class="container">
-        <ul>
-          <li><a href="index.html" target="_blank" rel="noopener noreferrer" class="btn_main">Главная</a></li>
-          <li>
-            <a href="catalog_root.html" target="_blank" rel="noopener noreferrer" class="btn_main">Корневая каталога</a>
-          </li>
-          <li><a href="catalog.html" target="_blank" rel="noopener noreferrer" class="btn_main">Каталог</a></li>
-          <li>
-            <a href="product.html" target="_blank" rel="noopener noreferrer" class="btn_main"
-              >Карточка товара (без отзывов)</a
-            >
-          </li>
-          <li>
-            <a href="product_review.html" target="_blank" rel="noopener noreferrer" class="btn_main"
-              >Карточка товара (с отзывами)</a
-            >
-          </li>
-          <li><a href="wishlist.html" target="_blank" rel="noopener noreferrer" class="btn_main">Избранное</a></li>
-          <li><a href="popup.html" target="_blank" rel="noopener noreferrer" class="btn_main">Модальные окна</a></li>
-          <li><a href="blog.html" target="_blank" rel="noopener noreferrer" class="btn_main">Блог</a></li>
-          <li><a href="news_detail.html" target="_blank" rel="noopener noreferrer" class="btn_main">Статья</a></li>
-          <li><a href="about.html" target="_blank" rel="noopener noreferrer" class="btn_main">О компании</a></li>
-          <li><a href="delivery.html" target="_blank" rel="noopener noreferrer" class="btn_main">Доставка</a></li>
-          <li>
-            <a href="confirm.html" target="_blank" rel="noopener noreferrer" class="btn_main">Подтверждение заказа</a>
-          </li>
-          <li><a href="contacts.html" target="_blank" rel="noopener noreferrer" class="btn_main">Контакты</a></li>
-          <li><a href="shops.html" target="_blank" rel="noopener noreferrer" class="btn_main">Магазины</a></li>
-          <li><a href="politics.html" target="_blank" rel="noopener noreferrer" class="btn_main">Политика</a></li>
-          <li><a href="404.html" target="_blank" rel="noopener noreferrer" class="btn_main">404</a></li>
-        </ul>
-      </div>
-    </main>
-    <div class="subscribeblock">
-      <div class="container subscribe">
-        <div class="subscribe__wrapper">
-          <div class="subscribe__item subscribe__header">
-            <div class="subscribe__title">Подпишитесь на нашу рассылку</div>
-          </div>
-          <div class="subscribe__item subscribe__form">
-            <form action="">
-              <div class="subscribe__formcontent">
-                <div class="subscribe__input"><input placeholder="Ваш email" /></div>
-                <div class="subscribe__button"><button type="submit" class="btn_main">Подписаться</button></div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer id="footer" class="footer">
-      <div class="footer__main">
-        <div class="container">
+        </div><!-- /.footer__col footer__col_info -->
+        <div class="footer__col">
           <div class="footer__items">
-            <div class="footer__col footer__col_info">
-              <div class="footer__informblock">
-                <div class="footer__logo"><img src="img/logo.svg" alt="" /></div>
-                <div class="footer__contacts">
-                  <div class="contacts">
-                    <div class="contacts__phone"><a href="tel:+7 495 555 55 55">+7 495 555 55 55</a></div>
-                    <div class="footer__callback">
-                      <div class="headertop__social">
-                        <div class="socials">
-                          <a href="#" class="socials__item"><img src="img/WhatsApp.svg" alt="" /></a
-                          ><a href="#" class="socials__item"><img src="img/Telegram.svg" alt="" /></a>
-                        </div>
-                      </div>
-                      <div class="headertop__callback">
-                        <a href="#popup_callback" data-toggle="modal" class="callbacklink">Заказать звонок</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer__address">
-                  <div class="footer__subtitle">Фактический адрес</div>
-                  <div class="footer__text">г. Москва, ул. Освобождения 35, пр.2 , д.4</div>
-                </div>
-              </div>
-            </div>
+            <div class="footer__col footer__catalog">
+              <div class="footer__title wave">Каталог</div>
+              <div class="footer__menu">
+                <ul>
+                  <li><a href="">Икра</a></li>
+                  <li><a href="">Копчености</a></li>
+                  <li><a href="">Рыба соленая</a></li>
+                  <li><a href="">Рыба вяленая / сушеная</a></li>
+                  <li><a href="">Рыба замороженная</a></li>
+                  <li><a href="">Морепродукты</a></li>
+                  <li><a href="">Готовая продукция</a></li>
+                  <li><a href="">Консервы</a></li>
+                  
+                </ul>
+              </div><!-- /.footer__menu -->
+            </div><!-- /.footer__catalog -->
             <div class="footer__col">
-              <div class="footer__items">
-                <div class="footer__col footer__catalog">
-                  <div class="footer__title wave">Каталог</div>
-                  <div class="footer__menu">
-                    <ul>
-                      <li><a href="">Икра</a></li>
-                      <li><a href="">Копчености</a></li>
-                      <li><a href="">Рыба соленая</a></li>
-                      <li><a href="">Рыба вяленая / сушеная</a></li>
-                      <li><a href="">Рыба замороженная</a></li>
-                      <li><a href="">Морепродукты</a></li>
-                      <li><a href="">Готовая продукция</a></li>
-                      <li><a href="">Консервы</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer__col">
-                  <div class="footer__title wave">О компании</div>
-                  <div class="footer__menu">
-                    <ul>
-                      <li><a href="">О нас</a></li>
-                      <li><a href="">Магазины</a></li>
-                      <li><a href="">Контакты</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer__title">Информация</div>
-                  <div class="footer__menu">
-                    <ul>
-                      <li><a href="">Доставка и оплата</a></li>
-                      <li><a href="">Статьи</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <div class="footer__title wave">О компании</div>
+              <div class="footer__menu">
+                <ul>
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Магазины</a></li>
+                  <li><a href="">Контакты</a></li>
+                  
+                </ul>
+              </div><!-- /.footer__menu -->
+           
+              <div class="footer__title">Информация</div>
+              <div class="footer__menu">
+                <ul>
+                  <li><a href="">Доставка и оплата</a></li>
+                  <li><a href="">Статьи</a></li>
+                  
+                </ul>
+              </div><!-- /.footer__menu -->
             </div>
-            <div class="footer__col footer__col_right">
-              <div class="footer__aside">
-                <div class="footer__block">
-                  <div class="footer__title wave">Остались вопросы?</div>
-                  <div class="footer__text_lg">Задайте их нам прямо сейчас</div>
-                  <div class="footer__ask"><a href="#popup_callback" class="btn_border">Задать вопрос</a></div>
-                </div>
-                <div class="footer__block footer__block_payment">
-                  <div class="footer__title wave">Мы принимаем</div>
-                  <div class="footer__payment">
-                    <div class="footer__icons">
-                      <div class="footer__icon"><img src="img/visa.svg" alt="" /></div>
-                      <div class="footer__icon"><img src="img/mastercard.svg" alt="" /></div>
-                      <div class="footer__icon"><img src="img/mir.svg" alt="" /></div>
-                    </div>
-                  </div>
-                </div>
+          </div><!-- /.footer__cols -->
+        </div><!-- /.footer__col -->
+       
+        <div class="footer__col footer__col_right">
+          <div class="footer__aside">
+            <div class="footer__block">
+              <div class="footer__title wave">Остались вопросы?</div><!-- /.footer__title wave -->
+              <div class="footer__text_lg">Задайте их нам прямо сейчас</div><!-- /.footer__text -->
+              <div class="footer__ask">
+                <a href="#popup_callback" data-toggle="modal" class="btn_border">Заказать звонок</a><!-- /.btn_border -->
+              </div><!-- /.footer__ask -->
+            </div><!-- /.footer__block -->
+            <div class="footer__block footer__block_payment">
+              <div class="footer__title wave">Мы принимаем</div><!-- /.footer__title wave -->
+              <div class="footer__payment">
+                <div class="footer__icons">
+                  <div class="footer__icon"><img src="img/visa.svg" alt=""></div><!-- /.footer__icon -->
+                  <div class="footer__icon"><img src="img/mastercard.svg" alt=""></div><!-- /.footer__icon -->
+                  <div class="footer__icon"><img src="img/mir.svg" alt=""></div><!-- /.footer__icon -->
+                </div><!-- /.footer__icons -->
               </div>
-            </div>
-          </div>
+            </div><!-- /.footer__block -->
+          </div><!-- /.footer__aside -->
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__items -->
+    </div><!-- /.container -->
+  </div><!-- /.footer__main -->
+  <div class="footer__bottom">
+    <div class="container">
+
+    <div class="footer__items">
+      <div class="footer__col">
+       
+        <div class="footer__cols flex items-center">
+          <div class="footer__maincopy">2024 © РЫБСПЕЦПРОДУКТ</div>
+          <div class="footer__links">
+            <div class="footer__link"><a href="" class="borderlink">Политика конфиденциальности</a></div>
+          </div><!-- /.footer__links -->
+      </div><!-- /.footer__cols -->
+      </div><!-- /.footer__col -->
+    
+      <div class="footer__col footer__col_right">
+        <div class="footer__aside">
+          <div class="footer__dev">
+            <a href="" class="fdev">
+              <span class="fdev__title">Разработано в:</span>
+              <span class="fdev__icon"><img src="img/empis.svg" alt=""></span>
+            </a>
+          </div><!-- /.footer__dev -->
         </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <div class="footer__items">
-            <div class="footer__col">
-              <div class="footer__cols flex items-center">
-                <div class="footer__maincopy">2024 © РЫБСПЕЦПРОДУКТ</div>
-                <div class="footer__links">
-                  <div class="footer__link"><a href="" class="borderlink">Политика конфиденциальности</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="footer__col footer__col_right">
-              <div class="footer__aside">
-                <div class="footer__dev">
-                  <a href="" class="fdev"
-                    ><span class="fdev__title">Разработано в:</span>
-                    <span class="fdev__icon"><img src="img/empis.svg" alt="" /></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div id="toTop"><img src="img/up.svg" alt="" /></div>
-    <script src="js/index.js"></script>
-  </body>
-</html>
+       
+      </div><!-- /.footer__col -->
+    </div><!-- /.footer__items -->
+  </div><!-- /.container -->
+  </div><!-- /.footer__bottom -->
+</footer>
+
+
+<div id="toTop">
+  <img src="img/up.svg" alt="">
+</div><!-- /#toTop -->
+
+
+<script src="js/index.js"></script>
+
+</body></html>

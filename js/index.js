@@ -8,8 +8,9 @@ function initFE() {
    contentSliderInit()
     mobileAccordeon()
     closeByOutsideSelect()
-    closeByClickOutside('.mainmenu', '.mainmenubtn')
-    closeByClickOutside('.catalogpage__aside', '.js-mobilefilter')
+    closeByClickOutside('.mainmenu', '.mainmenubtn', true)
+    closeByClickOutside('.catalogpage__aside', '.js-mobilefilter', false)
+    closeByClickOutside('.searchpopup', '.searchinput input', false)
   /*   fixElement(false, 750, 'mobpriceFixed', 'fixed')
     fixElement(300, false, 'headermain', 'fixed')
     fixElement(300, false, 'headercontainer', 'fixed')
@@ -17,10 +18,27 @@ function initFE() {
   }
 
 $(document).ready(function() {
+
+    $('.searchinput input').on('input', function(e) {
+        $('.searchpopup').addClass('active')
+      })
+   
+
+    
     $(".arrowmenu").click(function () {
-        $(".headermenu__wrapper").animate({
-          scrollLeft: "+=226px",
-        })
+        const $targetScroll = $(".headermenu__wrapper")
+        const initScroll = $targetScroll[0].scrollWidth
+        const contentWidth = $(".headermenu__wrapper").width()
+        const diff = initScroll - contentWidth - $targetScroll.scrollLeft()
+        if (diff > 70) {
+            $targetScroll.animate({
+                scrollLeft: "+=150px",
+            })
+            
+        } else {
+            $targetScroll[0].scrollLeft = 0
+        }
+       
       })
 
      $(window).scroll(function() {
@@ -499,12 +517,14 @@ function mobileAccordeon() {
 
 
 
-function closeByClickOutside(element, button) {
+function closeByClickOutside(element, button, backdrop) {
   $(document).click(function(event) {
       if (!$(event.target).closest(`${element},${button}`).length) {
           $(button).removeClass('active')
           $(element).removeClass('active')
-          $('.jsbackdrop').removeClass('active')
+          if (backdrop) {
+            $('.jsbackdrop').removeClass('active')
+          }
       }
   });
   
@@ -522,18 +542,17 @@ function closeByOutsideSelect() {
   $(document).click(function(event) {
       if (!$(event.target).closest(`.dropdown-select__list,.dropdown-select__title`).length) {
           $('.dropdown-select__list').hide()
-          $('.jsbackdrop').removeClass('active')
-         
+        
       }
   });
   
   $(document).keyup(function(e) {
-      if (e.key === "Escape") { // escape key maps to keycode `27`
+      if (e.key === "Escape") {
           $('.dropdown-select__list').hide()
-          $('.jsbackdrop').removeClass('active')
+        
       }
   });
-  $('.jsbackdrop').removeClass('active')
+
 
 }
 
