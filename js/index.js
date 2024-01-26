@@ -21,6 +21,7 @@ $(document).ready(function() {
 
     $('.searchinput input').on('input', function(e) {
         $('.searchpopup').addClass('active')
+        $('.jsbackdrop').addClass('active')
       })
    
 
@@ -255,6 +256,8 @@ $(document).ready(function() {
         },
         pagination: {
             el: ".mainslider__dots",
+                clickable: true,
+            
           },
       });
       

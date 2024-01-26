@@ -208,7 +208,8 @@ input[type="password"] { */
   input:not([type='checkbox']).input-error, input:not([type='radio']).input-error {
     border: 2px solid #FF585F; }
   input:not([type='checkbox']):focus, input:not([type='radio']):focus {
-    border: 2px solid #FFA500; }
+    border: 2px solid #FFA500;
+    background-color: #fff; }
 
 textarea {
   display: block;
@@ -5544,7 +5545,7 @@ input.input_image {
   position: absolute;
   top: 100%;
   width: 100%;
-  z-index: 999;
+  z-index: 99999;
   left: 0;
   display: none; }
 
@@ -6894,7 +6895,7 @@ h4 {
   display: flex;
   align-items: center; }
 
-.contactcards__icon a {
+.contactcards__icon a, .contactcards__icon span {
   max-width: 48px;
   min-width: 48px;
   height: 48px;
